@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Web Framework</h1>
+    <p class="lead">
+        It is a web framework with Admin template for building great Web sites and Web applications using HTML, CSS and JavaScript.
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Front-end Plugins</h2>
+        <ul class="list-unstyled list-inline">
+            @foreach (var dir in new System.IO.DirectoryInfo(Server.MapPath("~/plugins")).GetDirectories())
+            {
+                <li>@dir.Name</li>
+            }
+        </ul>
+    </div>
+</div>

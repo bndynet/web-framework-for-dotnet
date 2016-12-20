@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "Areas/Admin/Content/css/site.css",
+    "inputFile": "Areas/Admin/Content/css/site.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/js/appsettings.js",
+    "inputFile": "Areas/Admin/Content/js/appsettings.coffee"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/js/ng-app.js",
+    "inputFile": "Areas/Admin/Content/js/ng-app.coffee"
+  }
+]
