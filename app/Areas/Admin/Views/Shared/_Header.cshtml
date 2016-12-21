@@ -1,7 +1,7 @@
 ﻿<header class="main-header">
     <a href="#" class="logo">
-        <span class="logo-mini" ng-bind-html="appSettings.appLogoName"></span>
-        <span class="logo-lg" ng-bind-html="appSettings.appShortName"></span>
+        <span class="logo-mini" ng-bind-html="::appSettings.appLogoName"></span>
+        <span class="logo-lg" ng-bind-html="::appSettings.appShortName"></span>
     </a>
     <nav class="navbar navbar-static-top">
         <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -13,21 +13,23 @@
                 <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-bell-o"></i>
-                        <span class="label label-warning" ng-bind="appSettings.appNotification.data.length"></span>
+                        <span class="label label-warning" ng-bind="appNotifications.length"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">You have <span ng-bind="appSettings.appNotification.data.length"></span> notifications</li>
+                        <li class="header">You have <span ng-bind="appNotifications.length"></span> notifications</li>
                         <li>
                             <ul class="menu">
-                                <li ng-repeat="notification in appSettings.appNotification.data">
-                                    <a ng-href="{{notification.url}}">
+                                <li ng-repeat="notification in appNotifications">
+                                    <a ng-click="onNotificationClick(notification)">
                                         <i class="{{notification.icon}}" ng-show="notification.icon"></i>
-                                        <span ng-bind="notification.text"></span>
+                                        <span ng-bind="notification.title"></span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="footer" ng-if="appSettings.appNotification.more"><a href="#">View all</a></li>
+                        <li class="footer" ng-if="::appSettings.appNotification.more">
+                            <a ng-href="{{::appSettings.appNotification.more}}" ng-bind="::appSettings.appNotification.moreLabel||'View all'"></a>
+                        </li>
                     </ul>
                 </li>
                 <li class="dropdown user user-menu">

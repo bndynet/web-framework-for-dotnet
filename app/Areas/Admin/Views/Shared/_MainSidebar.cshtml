@@ -27,17 +27,17 @@
                 <span ng-bind="menu.text"></span>
 
                 <span class="pull-right-container" ng-show="menu.children||menu.label">
-                    <i class="fa fa-angle-left pull-right" ng-show="menu.children"></i>
+                    <i class="fa fa-angle-left pull-right" ng-show="menu.children.length > 0"></i>
                     <small class="label pull-right {{menu.labelClass}}" ng-bind="menu.label" ng-show="menu.label"></small>
                 </span>
             </a>
-            <ul class="treeview-menu" ng-if="menu.children">
+            <ul class="treeview-menu" ng-if="menu.children.length > 0">
                 <li ng-repeat="menu in menu.children" ng-include="'MainMenuItem'" ng-class="{'treeview': menu.children}"></li>
             </ul>
         </script>
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li ng-repeat="menu in appSettings.appMenu.data" ng-include="'MainMenuItem'" ng-class="{'treeview': menu.children}"></li>
+            <li ng-repeat="menu in appMenus" ng-include="'MainMenuItem'" ng-class="{'treeview': menu.children}"></li>
         </ul>
     </section>
 </aside>

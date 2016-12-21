@@ -6,11 +6,7 @@ using System.Web.Mvc;
 
 namespace Net.Bndy.WebApp.Areas.Admin.Controllers
 {
-    public class HomeController : _ControllerBase
+    public abstract class _ControllerBase : Net.Bndy.WebApp._ControllerBase
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
     }
 }

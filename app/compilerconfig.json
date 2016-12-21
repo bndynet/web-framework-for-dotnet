@@ -10,5 +10,9 @@
   {
     "outputFile": "Areas/Admin/Content/js/ng-app.js",
     "inputFile": "Areas/Admin/Content/js/ng-app.coffee"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/js/pages/_layout.js",
+    "inputFile": "Areas/Admin/Content/js/pages/_layout.coffee"
   }
 ]

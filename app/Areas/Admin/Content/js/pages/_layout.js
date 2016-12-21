@@ -2,19 +2,32 @@
 (function() {
   app.controller("LayoutCtrl", [
     "$scope", "$interval", "$http", function($scope, $interval, $http) {
+      var getNotification;
       $scope.appSettings = appSettings;
-      if ($scope.appSettings.appNotification.url) {
-        $interval(function() {
-          return $http.get($scope.appSettings.appNotification.url, function(data) {
-            return $scope.appSettings.appNotification.data = data;
+      $scope.appNotifications = [];
+      getNotification = function() {
+        return $http.get($scope.appSettings.appNotification.url).success(function(data) {
+          return angular.forEach(data, function(item) {
+            return $scope.appNotifications.push(item);
           });
+        });
+      };
+      if ($scope.appSettings.appNotification.url) {
+        getNotification();
+        $interval(function() {
+          return getNotification();
         }, $scope.appSettings.appNotification.interval * 60 * 1000);
       }
+      $scope.appMenus = [];
       if ($scope.appSettings.appMenu.url) {
-        return $http.get($scope.appSettings.appMenu.url, function(data) {
-          return $scope.appSettings.appMenu.data = data;
+        $http.get($scope.appSettings.appMenu.url).success(function(data) {
+          return $scope.appMenus = data;
         });
       }
+      $scope.onNotificationClick = function(item) {
+        $scope.appNotifications.splice($scope.appNotifications.indexOf(item), 1);
+        return alert(item.content);
+      };
     }
   ]);
 

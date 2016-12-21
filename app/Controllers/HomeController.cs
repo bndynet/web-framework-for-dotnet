@@ -6,24 +6,12 @@ using System.Web.Mvc;
 
 namespace Net.Bndy.WebApp.Controllers
 {
-    public class HomeController : Controller
+    using Net.Bndy.WebApp;
+
+    public class HomeController : _ControllerBase
     {
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
