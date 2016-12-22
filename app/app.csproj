@@ -178,6 +178,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Areas\Admin\Controllers\ApiController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\_ControllerBase.cs" />
@@ -268,6 +269,12 @@
     </Content>
     <Content Include="Areas\Admin\Content\js\ng-app.min.js">
       <DependentUpon>ng-app.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\js\pages\account\login.js">
+      <DependentUpon>login.coffee</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\js\pages\account\login.min.js">
+      <DependentUpon>login.js</DependentUpon>
     </Content>
     <Content Include="Areas\Admin\Content\js\pages\dashboard.js" />
     <Content Include="Areas\Admin\Content\js\pages\dashboard2.js" />
@@ -1941,6 +1948,8 @@
     <Content Include="Areas\Admin\Content\js\appsettings.coffee" />
     <Content Include="Areas\Admin\Content\js\ng-app.coffee" />
     <Content Include="Areas\Admin\Content\js\pages\_layout.coffee" />
+    <Content Include="Areas\Admin\Views\Account\Login.cshtml" />
+    <Content Include="Areas\Admin\Content\js\pages\account\login.coffee" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

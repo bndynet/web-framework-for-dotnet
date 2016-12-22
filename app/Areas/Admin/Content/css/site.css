@@ -7,3 +7,23 @@ a {
 .sidebar-menu .treeview-menu {
   padding-left: 20px; }
 
+/* pages */
+.page-login .logo {
+  margin-top: 60px;
+  text-align: center; }
+  .page-login .logo img {
+    height: 160px; }
+
+.page-login .panel {
+  width: 400px;
+  margin: 20px auto; }
+  .page-login .panel .panel-body {
+    padding: 20px; }
+    .page-login .panel .panel-body label {
+      font-weight: normal; }
+
+.page-login .copyright {
+  text-align: center; }
+  .page-login .copyright a {
+    font-weight: bold; }
+

@@ -14,5 +14,9 @@
   {
     "outputFile": "Areas/Admin/Content/js/pages/_layout.js",
     "inputFile": "Areas/Admin/Content/js/pages/_layout.coffee"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/js/pages/account/login.js",
+    "inputFile": "Areas/Admin/Content/js/pages/account/login.coffee"
   }
 ]
