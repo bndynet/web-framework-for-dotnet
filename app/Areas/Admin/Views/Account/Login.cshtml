@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="ngApp" ng-controller="LoginCtrl">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login - {{appSettings.appName}}</title>
+    <link href="~/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page-login">
+        <div class="logo">
+            <img src="~/images/logo.jpg" />
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    Log in to <span ng-bind="::appSettings.appShortName"></span>
+                </div>
+            </div>
+            <div class="panel-body">
+                <form name="mainForm" novalidate>
+                    <div class="form-group" ng-class="{'has-error': mainForm.username.$dirty && mainForm.username.$invalid}">
+                        <label>Username</label>
+                        <input type="text" name="username" class="form-control" ng-model="Username" required />
+                    </div>
+                    <div class="form-group" ng-class="{'has-error': mainForm.username.$dirty && mainForm.username.$invalid}">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" ng-model="Password" required />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" ng-disabled="mainForm.$invalid">
+                            Login
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <span ng-bind-html="::appSettings.appCopyright"></span><br />
+            <span ng-bind-html="::appSettings.appShortName"></span>
+            <strong ng-bind-html="::appSettings.appVersion"></strong>
+        </div>
+    </div>
+    <script src="~/Areas/Admin/Content/js/appsettings.js"></script>
+    <script src="~/plugins/angular/angular.min.js"></script>
+    <script src="~/plugins/angular/angular-sanitize.min.js"></script>
+    <script src="~/Areas/Admin/Content/js/ng-app.js"></script>
+    <script src="~/Areas/Admin/Content/js/pages/account/login.js"></script>
+</body>
+</html>
