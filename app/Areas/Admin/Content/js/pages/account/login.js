@@ -3,6 +3,12 @@
   app.controller("LoginCtrl", [
     "$scope", "$http", function($scope, $http) {
       $scope.appSettings = appSettings;
+      $scope.model = {};
+      $scope.login = function() {
+        return $http.post("/admin/account/login", $scope.model).success(function(data) {
+          return console.debug(data);
+        });
+      };
     }
   ]);
 

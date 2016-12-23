@@ -24,14 +24,14 @@
                 </div>
             </div>
             <div class="panel-body">
-                <form name="mainForm" novalidate>
+                <form name="mainForm" novalidate ng-submit="login()">
                     <div class="form-group" ng-class="{'has-error': mainForm.username.$dirty && mainForm.username.$invalid}">
                         <label>Username</label>
-                        <input type="text" name="username" class="form-control" ng-model="Username" required />
+                        <input type="text" name="username" class="form-control" ng-model="model.userName" required />
                     </div>
                     <div class="form-group" ng-class="{'has-error': mainForm.username.$dirty && mainForm.username.$invalid}">
                         <label>Password</label>
-                        <input type="password" name="password" class="form-control" ng-model="Password" required />
+                        <input type="password" name="password" class="form-control" ng-model="model.Password" required />
                     </div>
                     <br />
                     <div class="form-group">

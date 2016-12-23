@@ -184,6 +184,7 @@
     <Compile Include="Areas\Admin\Controllers\_ControllerBase.cs" />
     <Compile Include="Areas\Admin\Models\AppMenuViewModel.cs" />
     <Compile Include="Areas\Admin\Models\AppNotificationViewModel.cs" />
+    <Compile Include="Areas\Admin\Models\LoginViewModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
