@@ -24,7 +24,10 @@
         # TODO
         $scope.onNotificationClick = (item) ->
             $scope.appNotifications.splice $scope.appNotifications.indexOf(item), 1
-            alert item.content
+            dialog.alert item.title
+        #TODO: Logout
+        $scope.logout = ->
+            dialog.success "Logged out"
         
         return
 ]

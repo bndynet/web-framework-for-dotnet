@@ -26,7 +26,10 @@
       }
       $scope.onNotificationClick = function(item) {
         $scope.appNotifications.splice($scope.appNotifications.indexOf(item), 1);
-        return alert(item.content);
+        return dialog.alert(item.title);
+      };
+      $scope.logout = function() {
+        return dialog.success("Logged out");
       };
     }
   ]);

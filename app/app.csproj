@@ -1798,6 +1798,24 @@
     <Content Include="plugins\ionslider\ion.rangeSlider.min.js" />
     <Content Include="plugins\ionslider\ion.rangeSlider.skinFlat.css" />
     <Content Include="plugins\ionslider\ion.rangeSlider.skinNice.css" />
+    <Content Include="plugins\jDialog\jdialog.js">
+      <DependentUpon>jdialog.coffee</DependentUpon>
+    </Content>
+    <Content Include="plugins\jDialog\jdialog.min.js">
+      <DependentUpon>jdialog.js</DependentUpon>
+    </Content>
+    <Content Include="plugins\jDialog\lib\alertifyjs\css\alertify.css" />
+    <Content Include="plugins\jDialog\lib\alertifyjs\css\alertify.min.css" />
+    <Content Include="plugins\jDialog\lib\alertifyjs\js\alertify.js" />
+    <Content Include="plugins\jDialog\lib\alertifyjs\js\ngAlertify.js" />
+    <Content Include="plugins\jDialog\lib\jquery-1.12.4.min.js" />
+    <Content Include="plugins\jDialog\lib\layer\layer.js" />
+    <Content Include="plugins\jDialog\lib\layer\skin\default\icon-ext.png" />
+    <Content Include="plugins\jDialog\lib\layer\skin\default\icon.png" />
+    <Content Include="plugins\jDialog\lib\layer\skin\default\loading-0.gif" />
+    <Content Include="plugins\jDialog\lib\layer\skin\default\loading-1.gif" />
+    <Content Include="plugins\jDialog\lib\layer\skin\default\loading-2.gif" />
+    <Content Include="plugins\jDialog\lib\layer\skin\layer.css" />
     <Content Include="plugins\jQueryUI\jquery-ui.js" />
     <Content Include="plugins\jQueryUI\jquery-ui.min.js" />
     <Content Include="plugins\jQuery\jquery-2.2.3.min.js" />
@@ -1955,6 +1973,8 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="plugins\jDialog\jdialog.coffee" />
+    <Content Include="plugins\jDialog\lib\alertifyjs\css\alertify.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1981,7 +2001,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="plugins\jDialog\demo\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
