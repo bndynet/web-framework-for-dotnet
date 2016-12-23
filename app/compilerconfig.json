@@ -18,5 +18,9 @@
   {
     "outputFile": "Areas/Admin/Content/js/pages/account/login.js",
     "inputFile": "Areas/Admin/Content/js/pages/account/login.coffee"
+  },
+  {
+    "outputFile": "plugins/jDialog/jdialog.js",
+    "inputFile": "plugins/jDialog/jdialog.coffee"
   }
 ]
