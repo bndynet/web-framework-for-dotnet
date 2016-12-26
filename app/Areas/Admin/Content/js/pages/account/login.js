@@ -5,8 +5,15 @@
       $scope.appSettings = appSettings;
       $scope.model = {};
       $scope.login = function() {
+        $scope.isLoading = true;
+        dialog.loading(".panel-body");
         return $http.post("/admin/account/login", $scope.model).success(function(data) {
-          return console.debug(data);
+          console.debug(data);
+          $scope.isLoading = false;
+          return dialog.loaded(".panel-body");
+        }).error(function(rep) {
+          dialog.error("Failed to log in.", 5);
+          return $scope.isLoading = false;
         });
       };
     }

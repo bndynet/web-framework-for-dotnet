@@ -17,37 +17,3 @@ a {
         padding-left: 20px;
     }
 }
-
-
-/* pages */
-.page-login {
-    .logo {
-        margin-top: 60px;
-        text-align: center;
-
-        img {
-            height: 160px;
-        }
-    }
-
-    .panel {
-        width: 400px;
-        margin: 20px auto;
-
-        .panel-body {
-            padding: 20px;
-
-            label {
-                font-weight: normal;
-            }
-        }
-    }
-
-    .copyright {
-        text-align: center;
-
-        a {
-            font-weight: bold;
-        }
-    }
-}

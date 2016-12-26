@@ -27,7 +27,9 @@
             dialog.alert item.title
         #TODO: Logout
         $scope.logout = ->
-            dialog.success "Logged out"
+            dialog.confirm "Are you sure you want to log out?", ->
+                dialog.success "Logged out"
+                location.href = "/admin/account/logout"
         
         return
 ]

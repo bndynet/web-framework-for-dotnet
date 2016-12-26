@@ -22,5 +22,13 @@
   {
     "outputFile": "plugins/jDialog/jdialog.js",
     "inputFile": "plugins/jDialog/jdialog.coffee"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/css/page-login.css",
+    "inputFile": "Areas/Admin/Content/css/page-login.scss"
+  },
+  {
+    "outputFile": "plugins/jDialog/jdialog.css",
+    "inputFile": "plugins/jDialog/jdialog.scss"
   }
 ]

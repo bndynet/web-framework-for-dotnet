@@ -196,6 +196,12 @@
   <ItemGroup>
     <Content Include="Areas\Admin\Content\css\AdminLTE.css" />
     <Content Include="Areas\Admin\Content\css\AdminLTE.min.css" />
+    <Content Include="Areas\Admin\Content\css\page-login.css">
+      <DependentUpon>page-login.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\page-login.min.css">
+      <DependentUpon>page-login.css</DependentUpon>
+    </Content>
     <Content Include="Areas\Admin\Content\css\site.css">
       <DependentUpon>site.scss</DependentUpon>
     </Content>
@@ -244,6 +250,8 @@
     <Content Include="Areas\Admin\Content\img\credit\visa.png" />
     <Content Include="Areas\Admin\Content\img\default-50x50.gif" />
     <Content Include="Areas\Admin\Content\img\icons.png" />
+    <Content Include="Areas\Admin\Content\img\logo.png" />
+    <Content Include="Areas\Admin\Content\img\page-bg.jpg" />
     <Content Include="Areas\Admin\Content\img\photo1.png" />
     <Content Include="Areas\Admin\Content\img\photo2.png" />
     <Content Include="Areas\Admin\Content\img\photo3.jpg" />
@@ -1798,8 +1806,14 @@
     <Content Include="plugins\ionslider\ion.rangeSlider.min.js" />
     <Content Include="plugins\ionslider\ion.rangeSlider.skinFlat.css" />
     <Content Include="plugins\ionslider\ion.rangeSlider.skinNice.css" />
+    <Content Include="plugins\jDialog\jdialog.css">
+      <DependentUpon>jdialog.scss</DependentUpon>
+    </Content>
     <Content Include="plugins\jDialog\jdialog.js">
       <DependentUpon>jdialog.coffee</DependentUpon>
+    </Content>
+    <Content Include="plugins\jDialog\jdialog.min.css">
+      <DependentUpon>jdialog.css</DependentUpon>
     </Content>
     <Content Include="plugins\jDialog\jdialog.min.js">
       <DependentUpon>jdialog.js</DependentUpon>
@@ -1969,12 +1983,14 @@
     <Content Include="Areas\Admin\Content\js\pages\_layout.coffee" />
     <Content Include="Areas\Admin\Views\Account\Login.cshtml" />
     <Content Include="Areas\Admin\Content\js\pages\account\login.coffee" />
+    <Content Include="Areas\Admin\Content\css\page-login.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="plugins\jDialog\jdialog.coffee" />
     <Content Include="plugins\jDialog\lib\alertifyjs\css\alertify.scss" />
+    <Content Include="plugins\jDialog\jdialog.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

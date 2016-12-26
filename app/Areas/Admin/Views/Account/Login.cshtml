@@ -10,33 +10,58 @@
     <title>Login - {{appSettings.appName}}</title>
     <link href="~/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Areas/Admin/Content/css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/plugins/jDialog/lib/alertifyjs/css/alertify.min.css" rel="stylesheet" />
+    <link href="~/plugins/jDialog/lib/layer/skin/layer.css" rel="stylesheet" />
+    <link href="~/plugins/jDialog/jdialog.css" rel="stylesheet" />
     <link href="~/Areas/Admin/Content/css/site.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/page-login.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="page-login">
+    <!-- Theme: left-top, top-logo, top-logo-one -->
+    <div class="page-login top-logo-one">
         <div class="logo">
-            <img src="~/images/logo.jpg" />
+            <img src="~/Areas/Admin/Content/img/logo.png" />
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
+                <div class="top-logo">
+                    <img src="~/Areas/Admin/Content/img/logo.png" />
+                </div>
                 <div class="panel-title">
-                    Log in to <span ng-bind="::appSettings.appShortName"></span>
+                    <span ng-bind="::appSettings.appShortName"></span>
                 </div>
             </div>
             <div class="panel-body">
+                <div class="left-logo">
+                    <img src="~/Areas/Admin/Content/img/logo.png" />
+                </div>
                 <form name="mainForm" novalidate ng-submit="login()">
                     <div class="form-group" ng-class="{'has-error': mainForm.username.$dirty && mainForm.username.$invalid}">
                         <label>Username</label>
-                        <input type="text" name="username" class="form-control" ng-model="model.userName" required />
+                        <div class="input-group">
+                            <input type="text" name="username" class="form-control" ng-model="model.userName" required />
+                            <div class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group" ng-class="{'has-error': mainForm.username.$dirty && mainForm.username.$invalid}">
                         <label>Password</label>
-                        <input type="password" name="password" class="form-control" ng-model="model.Password" required />
+                        <div class="input-group">
+                            <input type="password" name="password" class="form-control" ng-model="model.Password" required />
+                            <div class="input-group-addon">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
                     </div>
-                    <br />
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block" ng-disabled="mainForm.$invalid">
-                            Login
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-primary" ng-disabled="mainForm.$invalid || isLoading">
+                            <span ng-show="!isLoading">Login</span>
+                            <span ng-show="isLoading">
+                                <i class="fa fa-spin fa-spinner"></i>
+                                Login...
+                            </span>
                         </button>
                     </div>
                 </form>
@@ -48,6 +73,10 @@
             <strong ng-bind-html="::appSettings.appVersion"></strong>
         </div>
     </div>
+    <script src="~/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="~/plugins/jDialog/lib/alertifyjs/js/alertify.js"></script>
+    <script src="~/plugins/jDialog/lib/layer/layer.js"></script>
+    <script src="~/plugins/jDialog/jdialog.js"></script>
     <script src="~/Areas/Admin/Content/js/appsettings.js"></script>
     <script src="~/plugins/angular/angular.min.js"></script>
     <script src="~/plugins/angular/angular-sanitize.min.js"></script>

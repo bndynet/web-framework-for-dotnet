@@ -1,0 +1,170 @@
+﻿$panel-width: 460px;
+
+body {
+    background: url(../img/page-bg.jpg) no-repeat;
+}
+
+.page-login {
+    margin-top: 160px;
+
+    .logo {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .top-logo,
+    .left-logo {
+        display: none;
+    }
+
+    .panel {
+        width: $panel-width;
+        margin: 0 auto;
+        box-shadow: rgba(0,0,0,0.6) 0 5px 10px;
+
+        .panel-heading {
+            padding: 15px;
+        }
+
+        .panel-body {
+            padding: 25px 25px 15px 25px;
+
+            label {
+                font-weight: normal;
+            }
+
+            .form-buttons {
+                margin: 35px 0 25px 0;
+
+                .btn {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 25px;
+        text-align: center;
+        color: #ddd;
+
+        a {
+            font-weight: bold;
+        }
+    }
+
+    &.top-logo {
+
+        .logo {
+            display: none;
+        }
+
+        .top-logo {
+            text-align: center;
+            display: block;
+        }
+
+        .panel-title {
+            display: none;
+        }
+    }
+
+    &.top-logo-one {
+        @extend .top-logo;
+
+        .panel {
+
+            .panel-body {
+                padding-bottom: 60px;
+
+                form {
+                    position: relative;
+
+                    .form-buttons {
+                        margin-left: -26px;
+                        margin-right: -26px;
+
+                        .btn {
+                            border-radius: 0;
+                            padding: 8px 15px;
+
+                            &:hover {
+                                border-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        .copyright {
+            position: relative;
+            top: -86px;
+            color: #666;
+        }
+    }
+
+    &.left-logo {
+        .logo {
+            display: none;
+        }
+
+        .panel {
+            width: 460px;
+
+
+
+            .panel-body {
+                padding: 25px 15px 5px 15px;
+
+                .left-logo {
+                    position: absolute;
+                    display: block;
+                    z-index: 0;
+                }
+
+                form {
+                    float: right;
+                    background-color: #fff;
+                    position: relative;
+                    z-index: 9999;
+
+                    .form-group {
+                        height: 32px;
+
+                        label {
+                            float: left;
+                            width: 86px;
+                            padding: 3px 15px 0 0;
+                            text-align: right;
+                        }
+
+                        .input-group {
+                            float: left;
+                            width: 240px;
+
+                            .form-control,
+                            .input-group-addon {
+                                height: 30px;
+                                padding: 5px 10px;
+                                line-height: 1;
+                            }
+                        }
+                    }
+
+                    .form-buttons {
+                        margin: 15px 0 25px 86px;
+
+                        .btn {
+                            width: 80px;
+                            padding: 4px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
