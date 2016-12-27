@@ -1,0 +1,14 @@
+﻿.page-error .panel {
+  padding: 30px;
+  width: 638px;
+  min-height: 260px;
+  margin: 100px auto; }
+  .page-error .panel .panel-body .icon {
+    position: absolute;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background: url(../images/warning.png) no-repeat; }
+  .page-error .panel .panel-body .content {
+    margin-left: 160px; }
+

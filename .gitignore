@@ -3,3 +3,4 @@ web-framework.sln.GhostDoc.xml
 packages/*
 app/bin/
 app/obj/
+app/logs/

@@ -9,8 +9,12 @@ using System.Web.Routing;
 
 namespace Net.Bndy.WebApp
 {
-    public class MvcApplication : System.Web.HttpApplication
+    using Net.Bndy;
+
+    public class WebApplication : System.Web.HttpApplication
     {
+        public static Log.Logger Logger { private set; get; }
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -18,6 +22,20 @@ namespace Net.Bndy.WebApp
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Log.Logger.Init();
+            Logger = Log.Logger.GetLogger(nameof(WebApplication), () =>
+            {
+                return new
+                {
+                    client_ip = HttpContext.Current.Request.UserHostAddress,
+                    client_os = HttpContext.Current.Request.Browser.Platform,
+                    browser = string.Format("{0} v{1}",
+                        HttpContext.Current.Request.Browser.Browser,
+                        HttpContext.Current.Request.Browser.Version
+                        ),
+                };
+            });
         }
     }
 }

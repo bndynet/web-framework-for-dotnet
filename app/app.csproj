@@ -295,10 +295,17 @@
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\page-error.css">
+      <DependentUpon>page-error.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\page-error.min.css">
+      <DependentUpon>page-error.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\logo.jpg" />
+    <Content Include="images\warning.png" />
     <Content Include="plugins\angular\angular-animate.js" />
     <Content Include="plugins\angular\angular-animate.min.js" />
     <Content Include="plugins\angular\angular-aria.js" />
@@ -1806,6 +1813,7 @@
     <Content Include="plugins\ionslider\ion.rangeSlider.min.js" />
     <Content Include="plugins\ionslider\ion.rangeSlider.skinFlat.css" />
     <Content Include="plugins\ionslider\ion.rangeSlider.skinNice.css" />
+    <Content Include="plugins\jDialog\demo\index.html" />
     <Content Include="plugins\jDialog\jdialog.css">
       <DependentUpon>jdialog.scss</DependentUpon>
     </Content>
@@ -1984,6 +1992,8 @@
     <Content Include="Areas\Admin\Views\Account\Login.cshtml" />
     <Content Include="Areas\Admin\Content\js\pages\account\login.coffee" />
     <Content Include="Areas\Admin\Content\css\page-login.scss" />
+    <Content Include="Areas\Admin\Views\Shared\Error.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Common.cshtml" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -1991,6 +2001,8 @@
     <Content Include="plugins\jDialog\jdialog.coffee" />
     <Content Include="plugins\jDialog\lib\alertifyjs\css\alertify.scss" />
     <Content Include="plugins\jDialog\jdialog.scss" />
+    <Content Include="Content\page-error.scss" />
+    <Content Include="log4net.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -2017,9 +2029,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="plugins\jDialog\demo\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -2028,6 +2038,10 @@
     <ProjectReference Include="..\..\lib\Net.Bndy.Web\Net.Bndy.Web.csproj">
       <Project>{37d76b33-ad99-471a-a377-a2c0f4c7515d}</Project>
       <Name>Net.Bndy.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Net.Bndy\Net.Bndy.csproj">
+      <Project>{c7b30aab-8a3c-4b5c-86e2-28fd15254c24}</Project>
+      <Name>Net.Bndy</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
