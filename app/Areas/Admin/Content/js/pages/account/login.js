@@ -8,12 +8,17 @@
         $scope.isLoading = true;
         dialog.loading(".panel-body");
         return $http.post("/admin/account/login", $scope.model).success(function(data) {
-          console.debug(data);
+          if (data.status > 0) {
+            location.href = "/admin/home/index";
+          } else {
+            dialog.error("Failed to log in.", 5);
+          }
           $scope.isLoading = false;
           return dialog.loaded(".panel-body");
         }).error(function(rep) {
-          dialog.error("Failed to log in.", 5);
-          return $scope.isLoading = false;
+          dialog.error("Request Error", 5);
+          $scope.isLoading = false;
+          return dialog.loaded(".panel-body");
         });
       };
     }

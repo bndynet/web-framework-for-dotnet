@@ -4,3 +4,4 @@ packages/*
 app/bin/
 app/obj/
 app/logs/
+app/App_Data/

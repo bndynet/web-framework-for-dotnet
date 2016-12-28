@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Init Admin</title>
+    <link href="~/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row" style="margin-top:150px;">
+        <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Init Admin
+                    </div>
+                </div>
+                <div class="panel-body">
+                    @using (Html.BeginForm("register", "account", FormMethod.Post, new { @class = "" }))
+                    {
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" name="username" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="text" name="password" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block" type="submit">OK</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/plugins/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Net.Bndy.WebApp.Areas.Admin.Controllers
 {
+    [Authorize]
     public abstract class _ControllerBase : Net.Bndy.WebApp._ControllerBase
     {
     }
