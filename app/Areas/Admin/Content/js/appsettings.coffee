@@ -8,7 +8,7 @@
   appNotification:
     url: "/admin/api/getnotifications"
     interval: 0.5   # minutes
-    more: ""     # the link to show all
+    more: "#"     # the link to show all
     moreLabel: "View all"
     
   appMenu: url: "/admin/api/getmenus"
@@ -32,3 +32,4 @@ if typeof dialog isnt "undefined"
         loadingIcon: 1      #0-2
         loadingShade: [0.6, "#fff"]
         useAlertify: true
+        wait: 0

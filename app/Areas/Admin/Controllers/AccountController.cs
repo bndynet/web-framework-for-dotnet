@@ -8,6 +8,7 @@ namespace Net.Bndy.WebApp.Areas.Admin.Controllers
 {
     using Net.Bndy.Web;
     using Net.Bndy.WebApp.Areas.Admin.Models;
+    using WebApp.Models;
 
     public class AccountController : _ControllerBase
     {
@@ -15,26 +16,28 @@ namespace Net.Bndy.WebApp.Areas.Admin.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            if (Auth.GetUsers().Count() > 0)
-            {
-                return RedirectToAction("Login");
-            }
+            //if (Auth.GetUsers().Count() > 0)
+            //{
+            //    return RedirectToAction("login");
+            //}
             return View();
         }
         [HttpPost]
         [AllowAnonymous]
         public ActionResult Register(string username, string password)
         {
-            if (Auth.GetUsers().Count() > 0)
-            {
-                return RedirectToAction("login");
-            }
+            //if (Auth.GetUsers().Count() > 0)
+            //{
+            //    return RedirectToAction("login");
+            //}
 
-            Auth.CreateUser(new Microsoft.AspNet.Identity.EntityFramework.IdentityUser
+            Auth.CreateUser(new ApplicationUser
             {
                 UserName = username,
             }, password);
-            return Content("OK");
+
+
+            return RedirectToAction("login");
         }
 
         [AllowAnonymous]

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Bndy.Web", "..\lib\Net.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Bndy", "..\lib\Net.Bndy\Net.Bndy.csproj", "{C7B30AAB-8A3C-4B5C-86E2-28FD15254C24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "models", "models\models.csproj", "{5B5B036B-93D6-4F43-9212-2A50FF3C602B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C7B30AAB-8A3C-4B5C-86E2-28FD15254C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7B30AAB-8A3C-4B5C-86E2-28FD15254C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7B30AAB-8A3C-4B5C-86E2-28FD15254C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5B036B-93D6-4F43-9212-2A50FF3C602B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5B036B-93D6-4F43-9212-2A50FF3C602B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5B036B-93D6-4F43-9212-2A50FF3C602B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5B036B-93D6-4F43-9212-2A50FF3C602B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

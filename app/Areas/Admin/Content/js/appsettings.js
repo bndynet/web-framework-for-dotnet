@@ -11,7 +11,7 @@
     appNotification: {
       url: "/admin/api/getnotifications",
       interval: 0.5,
-      more: "",
+      more: "#",
       moreLabel: "View all"
     },
     appMenu: {
@@ -35,7 +35,8 @@
       tipsTime: 3000,
       loadingIcon: 1,
       loadingShade: [0.6, "#fff"],
-      useAlertify: true
+      useAlertify: true,
+      wait: 0
     });
   }
 

@@ -4,6 +4,7 @@ using Owin;
 [assembly: OwinStartupAttribute(typeof(Net.Bndy.WebApp.Startup))]
 namespace Net.Bndy.WebApp
 {
+    using Models;
     using Net.Bndy.Web;
     public partial class Startup
     {

@@ -2046,6 +2046,10 @@
       <Project>{c7b30aab-8a3c-4b5c-86e2-28fd15254c24}</Project>
       <Name>Net.Bndy</Name>
     </ProjectReference>
+    <ProjectReference Include="..\models\models.csproj">
+      <Project>{5b5b036b-93d6-4f43-9212-2a50ff3c602b}</Project>
+      <Name>models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

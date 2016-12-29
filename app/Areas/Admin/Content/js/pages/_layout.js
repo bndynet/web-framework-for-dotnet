@@ -7,9 +7,12 @@
       $scope.appNotifications = [];
       getNotification = function() {
         return $http.get($scope.appSettings.appNotification.url).success(function(data) {
-          return angular.forEach(data, function(item) {
+          angular.forEach(data, function(item) {
             return $scope.appNotifications.push(item);
           });
+          if (data.length > 0) {
+            return dialog.error("You have " + data.length + " messages.");
+          }
         });
       };
       if ($scope.appSettings.appNotification.url) {
@@ -26,7 +29,9 @@
       }
       $scope.onNotificationClick = function(item) {
         $scope.appNotifications.splice($scope.appNotifications.indexOf(item), 1);
-        return dialog.alert(item.title);
+        return dialog.alert(item.content, null, {
+          title: item.title
+        });
       };
       $scope.logout = function() {
         return dialog.confirm("Are you sure you want to log out?", function() {

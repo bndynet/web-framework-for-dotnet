@@ -10,6 +10,7 @@
                 .success (data) ->
                     angular.forEach data, (item) ->
                         $scope.appNotifications.push item
+                    dialog.error "You have #{data.length} messages." if data.length > 0
         if $scope.appSettings.appNotification.url
             getNotification()
             $interval ->
@@ -24,7 +25,7 @@
         # TODO
         $scope.onNotificationClick = (item) ->
             $scope.appNotifications.splice $scope.appNotifications.indexOf(item), 1
-            dialog.alert item.title
+            dialog.alert item.content, null, {title: item.title}
         #TODO: Logout
         $scope.logout = ->
             dialog.confirm "Are you sure you want to log out?", ->

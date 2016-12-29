@@ -6,14 +6,17 @@ using System.Web.Mvc;
 
 namespace Net.Bndy.WebApp
 {
+    using Models;
     using Net.Bndy.Web;
     public abstract class _ControllerBase : Net.Bndy.Web.MVC.ControllerBase
     {
-        protected AspNetAuthentication Auth
+        protected AspNetAuthentication<ApplicationUser, ApplicationRole> Auth
         {
             get
             {
-                return new AspNetAuthentication(this.HttpContext);
+                return new AspNetAuthentication<ApplicationUser, ApplicationRole>(this.HttpContext, 
+                    new ApplicationDbContext()
+                    );
             }
         }
 
