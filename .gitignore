@@ -5,3 +5,6 @@ app/bin/
 app/obj/
 app/logs/
 app/App_Data/
+
+models/bin/
+models/obj/
