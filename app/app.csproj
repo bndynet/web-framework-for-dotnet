@@ -196,6 +196,18 @@
   <ItemGroup>
     <Content Include="Areas\Admin\Content\css\AdminLTE.css" />
     <Content Include="Areas\Admin\Content\css\AdminLTE.min.css" />
+    <Content Include="Areas\Admin\Content\css\my-skins\my-skin-red-line.css">
+      <DependentUpon>my-skin-red-line.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\my-skins\my-skin-red-line.min.css">
+      <DependentUpon>my-skin-red-line.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\my-skins\_all-my-skins.css">
+      <DependentUpon>_all-my-skins.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\my-skins\_all-my-skins.min.css">
+      <DependentUpon>_all-my-skins.css</DependentUpon>
+    </Content>
     <Content Include="Areas\Admin\Content\css\page-login.css">
       <DependentUpon>page-login.scss</DependentUpon>
     </Content>
@@ -1995,6 +2007,8 @@
     <Content Include="Areas\Admin\Views\Shared\Error.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Common.cshtml" />
     <Content Include="Areas\Admin\Views\Account\Register.cshtml" />
+    <Content Include="Areas\Admin\Content\css\my-skins\my-skin-red-line.scss" />
+    <Content Include="Areas\Admin\Content\css\my-skins\_all-my-skins.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

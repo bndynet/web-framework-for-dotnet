@@ -1,0 +1,72 @@
+﻿$primary-color: #dd4b39;
+$gray-light: rgba(0,0, 0, .1);
+
+.my-skin-red-line {
+    .main-header {
+        border-bottom: 2px solid $primary-color;
+
+        .logo,
+        .logo:hover {
+            background-color: white;
+            color: $primary-color;
+        }
+
+        .navbar {
+            background-color: white;
+
+            .nav {
+                & > li {
+                    &.active > a,
+                    & > a {
+                        color: $primary-color;
+
+                        &:hover
+                        {
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                .open {
+                    & > a {
+                        color: $primary-color;
+
+                        &:focus,
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            .navbar-nav {
+                .dropdown-menu {
+                    border: none;
+                }
+
+                & > .user-menu {
+                    & > .dropdown-menu {
+                        margin-top: -1px;
+
+                        & > li.user-header {
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+
+                & > .notifications-menu {
+                    margin-top: 0px;
+                }
+            }
+
+            .sidebar-toggle {
+                color: $primary-color;
+
+                &:hover {
+                    background-color: $gray-light;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
