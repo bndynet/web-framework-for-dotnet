@@ -180,6 +180,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Areas\Admin\Controllers\ApiController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ExampleController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\_ControllerBase.cs" />
     <Compile Include="Areas\Admin\Models\AppMenuViewModel.cs" />
@@ -196,6 +197,12 @@
   <ItemGroup>
     <Content Include="Areas\Admin\Content\css\AdminLTE.css" />
     <Content Include="Areas\Admin\Content\css\AdminLTE.min.css" />
+    <Content Include="Areas\Admin\Content\css\AdminLTE.mine.css">
+      <DependentUpon>AdminLTE.mine.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\AdminLTE.mine.min.css">
+      <DependentUpon>AdminLTE.mine.css</DependentUpon>
+    </Content>
     <Content Include="Areas\Admin\Content\css\my-skins\my-skin-red-line.css">
       <DependentUpon>my-skin-red-line.scss</DependentUpon>
     </Content>
@@ -213,12 +220,6 @@
     </Content>
     <Content Include="Areas\Admin\Content\css\page-login.min.css">
       <DependentUpon>page-login.css</DependentUpon>
-    </Content>
-    <Content Include="Areas\Admin\Content\css\site.css">
-      <DependentUpon>site.scss</DependentUpon>
-    </Content>
-    <Content Include="Areas\Admin\Content\css\site.min.css">
-      <DependentUpon>site.css</DependentUpon>
     </Content>
     <Content Include="Areas\Admin\Content\css\skins\skin-black-light.css" />
     <Content Include="Areas\Admin\Content\css\skins\skin-black-light.min.css" />
@@ -246,6 +247,12 @@
     <Content Include="Areas\Admin\Content\css\skins\skin-yellow.min.css" />
     <Content Include="Areas\Admin\Content\css\skins\_all-skins.css" />
     <Content Include="Areas\Admin\Content\css\skins\_all-skins.min.css" />
+    <Content Include="Areas\Admin\Content\css\style.css">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <Content Include="Areas\Admin\Content\img\avatar.png" />
     <Content Include="Areas\Admin\Content\img\avatar04.png" />
     <Content Include="Areas\Admin\Content\img\avatar2.png" />
@@ -299,6 +306,12 @@
     </Content>
     <Content Include="Areas\Admin\Content\js\pages\dashboard.js" />
     <Content Include="Areas\Admin\Content\js\pages\dashboard2.js" />
+    <Content Include="Areas\Admin\Content\js\pages\example\form.js">
+      <DependentUpon>form.coffee</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\js\pages\example\form.min.js">
+      <DependentUpon>form.js</DependentUpon>
+    </Content>
     <Content Include="Areas\Admin\Content\js\pages\_layout.js">
       <DependentUpon>_layout.coffee</DependentUpon>
     </Content>
@@ -1997,7 +2010,7 @@
     <Content Include="plugins\ionicons\fonts\ionicons.eot" />
     <Content Include="plugins\ionicons\fonts\ionicons.ttf" />
     <Content Include="plugins\ionicons\fonts\ionicons.woff" />
-    <Content Include="Areas\Admin\Content\css\site.scss" />
+    <Content Include="Areas\Admin\Content\css\AdminLTE.mine.scss" />
     <Content Include="Areas\Admin\Content\js\appsettings.coffee" />
     <Content Include="Areas\Admin\Content\js\ng-app.coffee" />
     <Content Include="Areas\Admin\Content\js\pages\_layout.coffee" />
@@ -2009,6 +2022,9 @@
     <Content Include="Areas\Admin\Views\Account\Register.cshtml" />
     <Content Include="Areas\Admin\Content\css\my-skins\my-skin-red-line.scss" />
     <Content Include="Areas\Admin\Content\css\my-skins\_all-my-skins.scss" />
+    <Content Include="Areas\Admin\Views\Example\Form.cshtml" />
+    <Content Include="Areas\Admin\Content\css\style.scss" />
+    <Content Include="Areas\Admin\Content\js\pages\example\form.coffee" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

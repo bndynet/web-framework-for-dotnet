@@ -1,9 +1,5 @@
 ﻿[
   {
-    "outputFile": "Areas/Admin/Content/css/site.css",
-    "inputFile": "Areas/Admin/Content/css/site.scss"
-  },
-  {
     "outputFile": "Areas/Admin/Content/js/appsettings.js",
     "inputFile": "Areas/Admin/Content/js/appsettings.coffee"
   },
@@ -42,5 +38,17 @@
   {
     "outputFile": "Areas/Admin/Content/css/my-skins/_all-my-skins.css",
     "inputFile": "Areas/Admin/Content/css/my-skins/_all-my-skins.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/css/AdminLTE.mine.css",
+    "inputFile": "Areas/Admin/Content/css/AdminLTE.mine.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/css/style.css",
+    "inputFile": "Areas/Admin/Content/css/style.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/js/pages/example/form.js",
+    "inputFile": "Areas/Admin/Content/js/pages/example/form.coffee"
   }
 ]

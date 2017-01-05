@@ -23,12 +23,15 @@
     <link href="~/plugins/jDialog/lib/alertifyjs/css/alertify.min.css" rel="stylesheet" />
     <link href="~/plugins/jDialog/jdialog.css" rel="stylesheet" />
 
+    <link href="~/Areas/Admin/Content/css/AdminLTE.mine.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/style.css" rel="stylesheet" />
+
+    @RenderSection("styles", false)
+
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="~/Areas/Admin/Content/css/site.css" rel="stylesheet" />
-    @RenderSection("styles", false)
 </head>
 <body class="hold-transition skin-red my-skin-red-line sidebar-mini">
     @RenderBody()
