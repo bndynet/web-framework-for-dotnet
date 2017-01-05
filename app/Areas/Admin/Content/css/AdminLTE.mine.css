@@ -1,0 +1,10 @@
+﻿.sidebar-menu .treeview-menu {
+  padding-left: 20px; }
+
+.error-page {
+  margin-top: 100px; }
+  .error-page h2 {
+    margin-top: 0; }
+  .error-page .error-content h3 {
+    padding-top: 15px; }
+
