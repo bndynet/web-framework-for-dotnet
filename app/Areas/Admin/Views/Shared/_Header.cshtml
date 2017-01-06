@@ -19,7 +19,7 @@
                         <li class="header">You have <span class="text-danger" ng-bind="appNotifications.length"></span> messages</li>
                         <li>
                             <ul class="menu">
-                                <li ng-repeat="notification in appNotifications">
+                                <li ng-repeat="notification in appNotifications track by $index">
                                     <a ng-click="onNotificationClick(notification)">
                                         <i class="{{notification.icon}}" ng-show="notification.icon"></i>
                                         <span ng-bind="notification.title"></span>

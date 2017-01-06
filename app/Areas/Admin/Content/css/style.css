@@ -24,6 +24,18 @@ a {
 .margin-sm {
   margin: 5px; }
 
+/* datepicker, daterangepicker */
+.daterangepicker.dropdown-menu .daterangepicker_input input.active {
+  background-color: #eeeeee; }
+
+.daterangepicker.dropdown-menu .ranges .range_inputs > .btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px; }
+  .daterangepicker.dropdown-menu .ranges .range_inputs > .btn.btn-success {
+    background-color: #00a65a;
+    border-color: #00733e; }
+
 /* form */
 .form-group {
   position: relative; }
@@ -56,6 +68,9 @@ form .form-control.error {
     right: 0;
     top: 0;
     font-weight: normal; }
+
+form .form-control[readonly] {
+  background-color: white; }
 
 form input[type=radio] + label.error,
 form input[type=checkbox] + label.error {

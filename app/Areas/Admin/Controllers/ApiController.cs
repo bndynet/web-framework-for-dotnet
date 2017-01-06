@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -21,6 +22,21 @@ namespace Net.Bndy.WebApp.Areas.Admin.Controllers
                 Text = "Dashboard",
                 Url = "/admin/home/index",
             });
+            var exampleMenu = new AppMenuViewModel
+            {
+                Icon = "fa fa-tags fa-fw",
+                Text = "Example"
+            };
+            foreach (FileInfo file in new DirectoryInfo(Server.MapPath("~/Areas/Admin/Views/Example")).GetFiles("*.cshtml", SearchOption.TopDirectoryOnly))
+            {
+                exampleMenu.Children.Add(new WebApp.Models.AppMenuViewModel
+                {
+                    Icon = "fa fa-tag fa-fw",
+                    Text = file.Name.Split('.')[0],
+                    Url = Url.Action(file.Name.Split('.')[0], "Example"),
+                });
+            }
+            lstMenu.Add(exampleMenu);
             // level1
             for (var i = 1; i <= 10; i++)
             {

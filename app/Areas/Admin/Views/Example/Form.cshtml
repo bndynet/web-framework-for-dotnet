@@ -18,23 +18,32 @@
                     <h3 class="box-title">Item Name</h3>
                 </div>
                 <div class="box-body">
+                    <div class="form-group">
+                        <label class="control-label">Required Field</label>
+                        <input name="requiredField" type="text" class="form-control" required ng-model="formModel.requiredField">
+                    </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label">Field</label>
-                                <input name="requiredField" type="text" class="form-control" required ng-model="formModel.requiredField">
+                                <label class="control-label">Date Picker</label>
+                                <div class="input-group">
+                                    <input type="text" class="date form-control" readonly>
+                                    <div class="input-group-addon">
+                                        <i class="fa  fa-calendar"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label">Field</label>
-                                <input type="text" class="form-control">
+                                <label class="control-label">Date Range Picker</label>
+                                <input type="text" class="daterange form-control" readonly>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label">Field</label>
-                                <input type="text" class="form-control">
+                                <label class="control-label">Email</label>
+                                <input type="email" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -56,11 +65,7 @@
 
                     <div class="form-group">
                         <label class="control-label">Field</label>
-                        <input type="text" class="form-control" name="subject">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Field</label>
-                        <textarea class="textarea form-control"></textarea>
+                        <textarea class="html form-control"></textarea>
                     </div>
                 </div>
                 <div class="box-footer clearfix">

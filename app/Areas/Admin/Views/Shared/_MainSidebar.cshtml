@@ -32,12 +32,12 @@
                 </span>
             </a>
             <ul class="treeview-menu" ng-if="menu.children.length > 0">
-                <li ng-repeat="menu in menu.children" ng-include="'MainMenuItem'" ng-class="{'treeview': menu.children}"></li>
+                <li ng-repeat="menu in menu.children track by $index" ng-include="'MainMenuItem'" ng-class="{'treeview': menu.children}"></li>
             </ul>
         </script>
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li ng-repeat="menu in appMenus" ng-include="'MainMenuItem'" ng-class="{'treeview': menu.children}"></li>
+            <li ng-repeat="menu in appMenus track by $index" ng-include="'MainMenuItem'" ng-class="{'treeview': menu.children}"></li>
         </ul>
     </section>
 </aside>
