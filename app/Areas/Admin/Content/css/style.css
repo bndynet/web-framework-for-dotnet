@@ -36,6 +36,16 @@ a {
     background-color: #00a65a;
     border-color: #00733e; }
 
+/* html editor */
+ul.wysihtml5-toolbar > li {
+  margin-bottom: 0; }
+  ul.wysihtml5-toolbar > li .btn-group .btn,
+  ul.wysihtml5-toolbar > li > .btn {
+    padding: 3px 6px;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+
 /* form */
 .form-group {
   position: relative; }

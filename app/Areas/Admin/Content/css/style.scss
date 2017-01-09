@@ -78,6 +78,23 @@ a {
     }
 }
 
+
+/* html editor */
+ul.wysihtml5-toolbar {
+    & > li {
+        margin-bottom: 0;
+
+        .btn-group .btn,
+        & > .btn {
+            padding: 3px 6px;
+            border-bottom: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}
+
+
 /* form */
 .form-group {
     position: relative;
