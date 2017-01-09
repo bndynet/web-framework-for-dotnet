@@ -9,20 +9,24 @@ $gray-light: rgba(0,0, 0, .1);
         .logo:hover {
             background-color: white;
             color: $primary-color;
+            height: 48px;
         }
 
         .navbar {
             background-color: white;
+            min-height: 48px;
 
             .nav {
                 & > li {
                     &.active > a,
                     & > a {
+                        padding-top: 14px;
+                        padding-bottom: 14px;
                         color: $primary-color;
 
-                        &:hover
-                        {
+                        &:hover {
                             color: $primary-color;
+                            background-color: $gray-light;
                         }
                     }
                 }
@@ -34,6 +38,7 @@ $gray-light: rgba(0,0, 0, .1);
                         &:focus,
                         &:hover {
                             color: $primary-color;
+                            background-color: $gray-light;
                         }
                     }
                 }
@@ -42,6 +47,7 @@ $gray-light: rgba(0,0, 0, .1);
             .navbar-nav {
                 .dropdown-menu {
                     border: none;
+                    margin-top: 2px;
                 }
 
                 & > .user-menu {
@@ -61,6 +67,7 @@ $gray-light: rgba(0,0, 0, .1);
 
             .sidebar-toggle {
                 color: $primary-color;
+                height: 48px;
 
                 &:hover {
                     background-color: $gray-light;
