@@ -2,7 +2,7 @@
 (function() {
   var app;
 
-  app = angular.module("ngApp", ["ngSanitize"]);
+  app = angular.module("ngApp", ["ngSanitize", "bnUi"]);
 
   window.app = app;
 

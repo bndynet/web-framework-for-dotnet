@@ -1,3 +1,6 @@
 [submodule "app/plugins/jDialog"]
 	path = app/plugins/jDialog
 	url = git@github.com:BndyNet/jDialog.git
+[submodule "app/plugins/angular-more"]
+	path = app/plugins/angular-more
+	url = git@github.com:BndyNet/angular-more.git

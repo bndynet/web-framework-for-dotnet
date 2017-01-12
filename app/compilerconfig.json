@@ -50,5 +50,9 @@
   {
     "outputFile": "Areas/Admin/Content/js/pages/example/form.js",
     "inputFile": "Areas/Admin/Content/js/pages/example/form.coffee"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/js/pages/example/table.js",
+    "inputFile": "Areas/Admin/Content/js/pages/example/table.coffee"
   }
 ]

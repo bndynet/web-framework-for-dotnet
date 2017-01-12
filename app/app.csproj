@@ -312,6 +312,12 @@
     <Content Include="Areas\Admin\Content\js\pages\example\form.min.js">
       <DependentUpon>form.js</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Content\js\pages\example\table.js">
+      <DependentUpon>table.coffee</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\js\pages\example\table.min.js">
+      <DependentUpon>table.js</DependentUpon>
+    </Content>
     <Content Include="Areas\Admin\Content\js\pages\_layout.js">
       <DependentUpon>_layout.coffee</DependentUpon>
     </Content>
@@ -331,6 +337,27 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\warning.png" />
+    <Content Include="plugins\angular-more\.gitignore" />
+    <Content Include="plugins\angular-more\dist\directives\bn-ui-input.js" />
+    <Content Include="plugins\angular-more\dist\directives\bn-ui-input.min.js" />
+    <Content Include="plugins\angular-more\dist\directives\bn-ui-pager.js" />
+    <Content Include="plugins\angular-more\dist\directives\bn-ui-pager.min.js" />
+    <Content Include="plugins\angular-more\dist\filters\datetime.js" />
+    <Content Include="plugins\angular-more\dist\filters\datetime.min.js" />
+    <Content Include="plugins\angular-more\test\filters\datetime.js" />
+    <Content Include="plugins\angular-more\test\filters\runner.html" />
+    <Content Include="plugins\angular-more\test\lib\angular-mocks.js" />
+    <Content Include="plugins\angular-more\test\lib\angular.js" />
+    <Content Include="plugins\angular-more\test\lib\boot.js" />
+    <Content Include="plugins\angular-more\test\lib\console.js" />
+    <Content Include="plugins\angular-more\test\lib\jasmine-html.js" />
+    <Content Include="plugins\angular-more\test\lib\jasmine.css" />
+    <Content Include="plugins\angular-more\test\lib\jasmine.js" />
+    <Content Include="plugins\angular-more\test\lib\jasmine.mine.css" />
+    <Content Include="plugins\angular-more\test\lib\jasmine.mine.min.css" />
+    <Content Include="plugins\angular-more\test\lib\jasmine_favicon.png" />
+    <Content Include="plugins\angular-more\test\lib\moment-with-locales.js" />
+    <Content Include="plugins\angular-more\test\lib\moment.js" />
     <Content Include="plugins\angular\angular-animate.js" />
     <Content Include="plugins\angular\angular-animate.min.js" />
     <Content Include="plugins\angular\angular-aria.js" />
@@ -2025,6 +2052,8 @@
     <Content Include="Areas\Admin\Views\Example\Form.cshtml" />
     <Content Include="Areas\Admin\Content\css\style.scss" />
     <Content Include="Areas\Admin\Content\js\pages\example\form.coffee" />
+    <Content Include="Areas\Admin\Views\Example\Table.cshtml" />
+    <Content Include="Areas\Admin\Content\js\pages\example\table.coffee" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -2034,6 +2063,17 @@
     <Content Include="plugins\jDialog\jdialog.scss" />
     <Content Include="Content\page-error.scss" />
     <Content Include="log4net.config" />
+    <Content Include="plugins\angular-more\compilerconfig.json" />
+    <Content Include="plugins\angular-more\compilerconfig.json.defaults" />
+    <Content Include="plugins\angular-more\gruntfile.coffee" />
+    <Content Include="plugins\angular-more\LICENSE" />
+    <Content Include="plugins\angular-more\package.json" />
+    <Content Include="plugins\angular-more\README.md" />
+    <Content Include="plugins\angular-more\src\directives\bn-ui-input.coffee" />
+    <Content Include="plugins\angular-more\src\directives\bn-ui-pager.coffee" />
+    <Content Include="plugins\angular-more\src\filters\datetime.coffee" />
+    <Content Include="plugins\angular-more\test\filters\datetime.coffee" />
+    <Content Include="plugins\angular-more\test\lib\jasmine.mine.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -2068,6 +2108,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\lib\Net.Bndy.Data\Net.Bndy.Data.csproj">
+      <Project>{3a11cb93-33f8-4bef-87f7-67cbe5a211e0}</Project>
+      <Name>Net.Bndy.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\lib\Net.Bndy.Web\Net.Bndy.Web.csproj">
       <Project>{37d76b33-ad99-471a-a377-a2c0f4c7515d}</Project>
       <Name>Net.Bndy.Web</Name>
