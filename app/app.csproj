@@ -2095,7 +2095,6 @@
     <Content Include="plugins\bootstrap-more\src\bootstrap-more.coffee" />
     <Content Include="plugins\bootstrap-more\src\bootstrap-more.scss" />
     <Content Include="plugins\bootstrap-more\src\_variables.scss" />
-    <Content Include="package.json" />
     <Content Include="plugins\angular-more\demo\bn-ui-input.coffee" />
     <Content Include="plugins\angular-more\src\directives\bn-ui-pager.scss" />
     <Content Include="plugins\angular-bootstrap-datetimepicker\css\datetimepicker.css.map" />
