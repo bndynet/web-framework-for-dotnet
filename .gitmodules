@@ -4,3 +4,6 @@
 [submodule "app/plugins/angular-more"]
 	path = app/plugins/angular-more
 	url = git@github.com:BndyNet/angular-more.git
+[submodule "app/plugins/bootstrap-more"]
+	path = app/plugins/bootstrap-more
+	url = git@github.com:BndyNet/bootstrap-more.git

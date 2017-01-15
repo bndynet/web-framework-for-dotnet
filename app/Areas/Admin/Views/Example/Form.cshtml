@@ -2,7 +2,7 @@
     <section class="content-header">
         <h1>
             Form
-            <small>New Item</small>
+            <small></small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -15,19 +15,19 @@
             <div class="box box-primary">
                 <div class="box-header">
                     <i class="fa fa-tag"></i>
-                    <h3 class="box-title">Item Name</h3>
+                    <h3 class="box-title">Normal</h3>
                 </div>
                 <div class="box-body">
                     <div class="form-group">
                         <label class="control-label">Required Field</label>
-                        <input name="requiredField" type="text" class="form-control" required ng-model="formModel.requiredField">
+                        <input name="requiredField" type="text" class="form-control" required ng-model="model.requiredField">
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">Date Picker</label>
                                 <div class="input-group">
-                                    <input type="text" class="date form-control" readonly>
+                                    <input type="text" class="date form-control" ng-model="model.date" readonly>
                                     <div class="input-group-addon">
                                         <i class="fa  fa-calendar"></i>
                                     </div>
@@ -37,7 +37,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">Date Range Picker</label>
-                                <input type="text" class="daterange form-control" readonly>
+                                <input type="text" class="daterange form-control" ng-model="model.daterange" readonly>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -76,7 +76,29 @@
                 </div>
             </div>
         </form>
+
+        <form>
+            <div class="box box-default">
+                <div class="box-header">
+                    <div class="box-title">
+                        <i class="fa fa-tag"></i> &lt;bn-ui-input /&gt;
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <bn-ui-input label="Field" ng-model="model.text" class="col-xs-4"></bn-ui-input>
+                        <bn-ui-input label="Field M/D/YYYY" ng-model="model.date" type="date" format="M/D/YYYY" class="col-xs-4"></bn-ui-input>
+                        <bn-ui-input label="Field M/D/YYYY h:mm a" ng-model="model.datetime" type="datetime" format="M/D/YYYY h:mm a" class="col-xs-4"></bn-ui-input>
+                        </div>
+                    <div class="row">
+                        <bn-ui-input label="Field" ng-model="model.text" class="col-xs-6"></bn-ui-input>
+                        <bn-ui-input label="Field" ng-model="model.text" class="col-xs-6"></bn-ui-input>
+                    </div>
+                </div>
+            </div>
+        </form>
     </section>
+
 </div>
 
 @section scripts{

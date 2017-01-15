@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -337,7 +339,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\warning.png" />
+    <Content Include="plugins\angular-bootstrap-datetimepicker\css\datetimepicker.css" />
+    <Content Include="plugins\angular-bootstrap-datetimepicker\js\datetimepicker.js" />
+    <Content Include="plugins\angular-bootstrap-datetimepicker\js\datetimepicker.templates.js" />
+    <Content Include="plugins\angular-date-time-input\dateTimeInput.js" />
     <Content Include="plugins\angular-more\.gitignore" />
+    <Content Include="plugins\angular-more\.gitmodules" />
+    <Content Include="plugins\angular-more\demo\bn-ui-input.js" />
+    <Content Include="plugins\angular-more\demo\index.html" />
+    <Content Include="plugins\angular-more\dist\css\bn-ui-pager.css" />
+    <Content Include="plugins\angular-more\dist\css\bn-ui-pager.min.css" />
     <Content Include="plugins\angular-more\dist\directives\bn-ui-input.js" />
     <Content Include="plugins\angular-more\dist\directives\bn-ui-input.min.js" />
     <Content Include="plugins\angular-more\dist\directives\bn-ui-pager.js" />
@@ -1130,6 +1141,12 @@
     <Content Include="plugins\angular\i18n\angular-locale_zh.js" />
     <Content Include="plugins\angular\i18n\angular-locale_zu-za.js" />
     <Content Include="plugins\angular\i18n\angular-locale_zu.js" />
+    <Content Include="plugins\bootstrap-more\.gitignore" />
+    <Content Include="plugins\bootstrap-more\demo\index.html" />
+    <Content Include="plugins\bootstrap-more\dist\bootstrap-more.css" />
+    <Content Include="plugins\bootstrap-more\dist\bootstrap-more.js" />
+    <Content Include="plugins\bootstrap-more\dist\bootstrap-more.min.css" />
+    <Content Include="plugins\bootstrap-more\dist\bootstrap-more.min.js" />
     <Content Include="plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="plugins\bootstrap-slider\slider.css" />
     <Content Include="plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.js" />
@@ -2063,8 +2080,6 @@
     <Content Include="plugins\jDialog\jdialog.scss" />
     <Content Include="Content\page-error.scss" />
     <Content Include="log4net.config" />
-    <Content Include="plugins\angular-more\compilerconfig.json" />
-    <Content Include="plugins\angular-more\compilerconfig.json.defaults" />
     <Content Include="plugins\angular-more\gruntfile.coffee" />
     <Content Include="plugins\angular-more\LICENSE" />
     <Content Include="plugins\angular-more\package.json" />
@@ -2074,6 +2089,16 @@
     <Content Include="plugins\angular-more\src\filters\datetime.coffee" />
     <Content Include="plugins\angular-more\test\filters\datetime.coffee" />
     <Content Include="plugins\angular-more\test\lib\jasmine.mine.scss" />
+    <Content Include="plugins\bootstrap-more\gruntfile.coffee" />
+    <Content Include="plugins\bootstrap-more\LICENSE" />
+    <Content Include="plugins\bootstrap-more\package.json" />
+    <Content Include="plugins\bootstrap-more\src\bootstrap-more.coffee" />
+    <Content Include="plugins\bootstrap-more\src\bootstrap-more.scss" />
+    <Content Include="plugins\bootstrap-more\src\_variables.scss" />
+    <Content Include="package.json" />
+    <Content Include="plugins\angular-more\demo\bn-ui-input.coffee" />
+    <Content Include="plugins\angular-more\src\directives\bn-ui-pager.scss" />
+    <Content Include="plugins\angular-bootstrap-datetimepicker\css\datetimepicker.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -2125,11 +2150,15 @@
       <Name>models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">

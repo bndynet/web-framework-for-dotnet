@@ -1,3 +1,3 @@
-﻿app = angular.module "ngApp", ["ngSanitize", "bnUi"]
+﻿app = angular.module "ngApp", ["ngSanitize", "bnUi"] 
 
 window.app = app

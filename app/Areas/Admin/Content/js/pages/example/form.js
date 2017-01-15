@@ -2,12 +2,12 @@
 (function() {
   app.controller("FormCtrl", [
     "$scope", "$http", function($scope, $http) {
-      $scope.formModel = {};
+      $scope.model = {};
       $scope.submitForm = function() {
         if ($scope.form.$invalid) {
           dialog.error("Form is invalid");
         } else {
-          return dialog.success(angular.toJson($scope.formModel));
+          return dialog.success(angular.toJson($scope.model));
         }
       };
     }
