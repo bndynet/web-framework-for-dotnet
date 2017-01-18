@@ -28,7 +28,7 @@
                     <tbody>
                         <tr ng-repeat="item in model.data track by $index">
                             <td ng-bind="item.title"></td>
-                            <td ng-bind="item.dateTime | date: 'MM/dd/yyyy h:mm a'"></td>
+                            <td ng-bind="item.dateTime | appDateTime"></td>
                             <td>
                                 <a ng-click="remove(item)" class="text-danger">
                                     <i class="fa fa fa-remove"></i>
@@ -39,7 +39,7 @@
                     <tfoot>
                         <tr>
                             <td colspan="3">
-                                <bn-ui-pager ng-model="model" on-page="search"></bn-ui-pager>
+                                <bn-ui-pager ng-model="model" on-page="search(page)"></bn-ui-pager>
                             </td>
                         </tr>
                     </tfoot>
