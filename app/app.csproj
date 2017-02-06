@@ -1859,18 +1859,11 @@
     <Content Include="plugins\ionslider\ion.rangeSlider.skinFlat.css" />
     <Content Include="plugins\ionslider\ion.rangeSlider.skinNice.css" />
     <Content Include="plugins\jDialog\demo\index.html" />
-    <Content Include="plugins\jDialog\jdialog.css">
-      <DependentUpon>jdialog.scss</DependentUpon>
-    </Content>
-    <Content Include="plugins\jDialog\jdialog.js">
-      <DependentUpon>jdialog.coffee</DependentUpon>
-    </Content>
-    <Content Include="plugins\jDialog\jdialog.min.css">
-      <DependentUpon>jdialog.css</DependentUpon>
-    </Content>
-    <Content Include="plugins\jDialog\jdialog.min.js">
-      <DependentUpon>jdialog.js</DependentUpon>
-    </Content>
+    <Content Include="plugins\jDialog\demo\_form.html" />
+    <Content Include="plugins\jDialog\dist\jdialog.css" />
+    <Content Include="plugins\jDialog\dist\jdialog.js" />
+    <Content Include="plugins\jDialog\dist\jdialog.min.css" />
+    <Content Include="plugins\jDialog\dist\jdialog.min.js" />
     <Content Include="plugins\jDialog\lib\alertifyjs\css\alertify.css" />
     <Content Include="plugins\jDialog\lib\alertifyjs\css\alertify.min.css" />
     <Content Include="plugins\jDialog\lib\alertifyjs\js\alertify.js" />
@@ -2051,9 +2044,7 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <Content Include="plugins\jDialog\jdialog.coffee" />
     <Content Include="plugins\jDialog\lib\alertifyjs\css\alertify.scss" />
-    <Content Include="plugins\jDialog\jdialog.scss" />
     <Content Include="Content\page-error.scss" />
     <Content Include="log4net.config" />
     <Content Include="plugins\bootstrap-more\gruntfile.coffee" />
