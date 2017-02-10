@@ -26,6 +26,12 @@
         $scope.onNotificationClick = (item) ->
             $scope.appNotifications.splice $scope.appNotifications.indexOf(item), 1
             dialog.alert item.content, null, {title: item.title}
+            
+        $scope.menuClick = (menu, $event) ->
+            sender = $($event.target)
+            location.href = menu.url if menu.url
+            $event.stopPropagation() if sender.parents(".with-sidebar-horizontal").length
+            
         #TODO: Logout
         $scope.logout = ->
             dialog.confirm "Are you sure you want to log out?", ->

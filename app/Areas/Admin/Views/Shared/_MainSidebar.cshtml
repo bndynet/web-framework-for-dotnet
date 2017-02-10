@@ -22,7 +22,7 @@
         </form>
 
         <script type="text/ng-template" id="MainMenuItem">
-            <a ng-href="{{menu.url}}">
+            <a ng-click="menuClick(menu, $event)">
                 <i class="{{menu.icon}}"></i>
                 <span ng-bind="menu.text"></span>
 

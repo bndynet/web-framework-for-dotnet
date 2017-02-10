@@ -33,6 +33,16 @@
           title: item.title
         });
       };
+      $scope.menuClick = function(menu, $event) {
+        var sender;
+        sender = $($event.target);
+        if (menu.url) {
+          location.href = menu.url;
+        }
+        if (sender.parents(".with-sidebar-horizontal").length) {
+          return $event.stopPropagation();
+        }
+      };
       $scope.logout = function() {
         return dialog.confirm("Are you sure you want to log out?", function() {
           dialog.success("Logged out");
