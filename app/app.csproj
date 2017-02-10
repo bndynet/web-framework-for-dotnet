@@ -211,6 +211,12 @@
     <Content Include="Areas\Admin\Content\css\my-skins\my-skin-red-line.min.css">
       <DependentUpon>my-skin-red-line.css</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Content\css\my-skins\with-sidebar-horizontal.css">
+      <DependentUpon>with-sidebar-horizontal.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\my-skins\with-sidebar-horizontal.min.css">
+      <DependentUpon>with-sidebar-horizontal.css</DependentUpon>
+    </Content>
     <Content Include="Areas\Admin\Content\css\my-skins\_all-my-skins.css">
       <DependentUpon>_all-my-skins.scss</DependentUpon>
     </Content>
@@ -2040,6 +2046,7 @@
     <Content Include="Areas\Admin\Content\js\pages\example\form.coffee" />
     <Content Include="Areas\Admin\Views\Example\Table.cshtml" />
     <Content Include="Areas\Admin\Content\js\pages\example\table.coffee" />
+    <Content Include="Areas\Admin\Content\css\my-skins\with-sidebar-horizontal.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
