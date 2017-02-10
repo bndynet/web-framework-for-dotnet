@@ -15,6 +15,7 @@ The *Admin Template* based on AdminLTE.
  - ASP.NET Identity
  - Entity Framework
  - log4net
+ - [Net.Bndy, Net.Bndy.Data, Net.Bndy.Web](https://github.com/BndyNet/lib)
  - ================
  - bootstrap
  - [bootstrap-more](https://github.com/bndynet/bootstrap-more)
