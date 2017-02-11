@@ -42,6 +42,7 @@
                     &.treeview:hover {
                         .treeview-menu {
                             display: block;
+                            padding-left: 0;
                         }
 
                         .pull-right-container {
@@ -83,7 +84,14 @@
                         box-shadow: rgba(0,0,0,.4) 5px 5px 10px;
                         display: none;
 
+                        .treeview-menu {
+                            a {
+                                padding-left: 30px;
+                            }
+                        }
+
                         li {
+
                             a {
                                 & > .pull-right-container {
                                     display: block;
@@ -110,3 +118,88 @@
         margin-left: 0;
     }
 }
+
+@mixin setSkin($skinName, $skinColor) {
+    $hoverColor: darken($skinColor, 5%);
+    $hoverColorDarken: darken($hoverColor, 5%);
+
+    .with-sidebar-horizontal {
+        &.#{$skinName} {
+            .logo {
+                background-color: $skinColor;
+            }
+        }
+
+        &.#{$skinName}-light {
+
+
+            .logo,
+            .logo:hover {
+                background-color: #fff;
+                color: $skinColor;
+            }
+
+            .main-header {
+                .navbar {
+                    background-color: #fff;
+
+                    .nav > li {
+                        & > a,
+                        & > a:focus,
+                        & > a:hover,
+                        & > a:active {
+                            color: $skinColor;
+                        }
+                    }
+                }
+            }
+
+            .main-sidebar {
+                background-color: $skinColor;
+
+                a {
+                    color: #fff;
+                }
+
+                .sidebar-menu {
+                    & > li {
+
+                        &.header {
+                            color: #848484;
+                            background: #f9fafc;
+                        }
+
+                        & > a {
+                            border-left: 3px solid transparent;
+                            font-weight: 600;
+                        }
+
+                        &:hover > a,
+                        &.active > a {
+                            background-color: $hoverColor;
+                            color: #fff;
+                        }
+
+
+
+                        & > .treeview-menu {
+                            background-color: $hoverColor;
+
+                            a:hover {
+                                background-color: $hoverColorDarken;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* override the default skins */
+@include setSkin("skin-red", #dd4b39);
+@include setSkin("skin-blue", #3c8dbc);
+@include setSkin("skin-purple", #605ca8);
+@include setSkin("skin-green", #00a65a);
+@include setSkin("skin-yellow", #f39c12);
