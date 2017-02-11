@@ -43,7 +43,7 @@ namespace Net.Bndy.WebApp.Areas.Admin.Controllers
                 var menuLevel1 = new AppMenuViewModel()
                 {
                     Id = i.ToString(),
-                    Text = "Level " + i,
+                    Text = "MENU " + i,
                     Icon = "fa fa-fw fa-users text-aqua",
                 };
                 menuLevel1.Url = "#" + menuLevel1.Id;
