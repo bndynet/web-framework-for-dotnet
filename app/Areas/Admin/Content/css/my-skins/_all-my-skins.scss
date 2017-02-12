@@ -1,2 +1,6 @@
 ﻿@import "with-sidebar-horizontal.scss";
-@import "my-skin-red-line.scss";
+@import "with-header-light.scss";
+
+.sidebar .sidebar-menu > li > a {
+    font-weight: normal;
+}

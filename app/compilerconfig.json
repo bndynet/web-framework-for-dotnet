@@ -32,10 +32,6 @@
     "inputFile": "Content/page-error.scss"
   },
   {
-    "outputFile": "Areas/Admin/Content/css/my-skins/my-skin-red-line.css",
-    "inputFile": "Areas/Admin/Content/css/my-skins/my-skin-red-line.scss"
-  },
-  {
     "outputFile": "Areas/Admin/Content/css/my-skins/_all-my-skins.css",
     "inputFile": "Areas/Admin/Content/css/my-skins/_all-my-skins.scss"
   },
@@ -58,5 +54,9 @@
   {
     "outputFile": "Areas/Admin/Content/css/my-skins/with-sidebar-horizontal.css",
     "inputFile": "Areas/Admin/Content/css/my-skins/with-sidebar-horizontal.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/css/my-skins/with-header-light.css",
+    "inputFile": "Areas/Admin/Content/css/my-skins/with-header-light.scss"
   }
 ]

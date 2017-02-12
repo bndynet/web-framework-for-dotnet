@@ -119,7 +119,7 @@
     }
 }
 
-@mixin setSkin($skinName, $skinColor) {
+@mixin setSkinForSidebarHorizontal($skinName, $skinColor) {
     $hoverColor: darken($skinColor, 5%);
     $hoverColorDarken: darken($hoverColor, 5%);
 
@@ -159,6 +159,7 @@
 
                 a {
                     color: #fff;
+                    font-weight: normal;
                 }
 
                 .sidebar-menu {
@@ -170,8 +171,7 @@
                         }
 
                         & > a {
-                            border-left: 3px solid transparent;
-                            font-weight: 600;
+                            font-weight: normal;
                         }
 
                         &:hover > a,
@@ -198,8 +198,8 @@
 }
 
 /* override the default skins */
-@include setSkin("skin-red", #dd4b39);
-@include setSkin("skin-blue", #3c8dbc);
-@include setSkin("skin-purple", #605ca8);
-@include setSkin("skin-green", #00a65a);
-@include setSkin("skin-yellow", #f39c12);
+@include setSkinForSidebarHorizontal("skin-red", #dd4b39);
+@include setSkinForSidebarHorizontal("skin-blue", #3c8dbc);
+@include setSkinForSidebarHorizontal("skin-purple", #605ca8);
+@include setSkinForSidebarHorizontal("skin-green", #00a65a);
+@include setSkinForSidebarHorizontal("skin-yellow", #f39c12);
