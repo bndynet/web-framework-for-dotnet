@@ -8,7 +8,7 @@ Use `with-sidebar-horizontal` to set the sidebar horizontal.
 
 ![](https://raw.githubusercontent.com/BndyNet/web-framework/master/screenshots/home-sidebar-horizontal.png)
 
-Use `with-header-light` to set the sidebar horizontal.
+The following is `with-header-light` style.
 
 ![](https://raw.githubusercontent.com/BndyNet/web-framework/master/screenshots/home-header-light.png)
 
