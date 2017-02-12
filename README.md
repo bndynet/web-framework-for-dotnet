@@ -1,12 +1,16 @@
 # [web-framework](https://github.com/bndynet/angular-more)
 
-A web framework with Admin template for building great Web sites and Web applications using HTML, CSS and JavaScript. 
+A web framework with Admin template for building great Web sites and Web applications using HTML, CSS and JavaScript. The *Admin Template* based on AdminLTE. 
 
 ![](https://raw.githubusercontent.com/BndyNet/web-framework/master/screenshots/home.png)
 
-The *Admin Template* based on AdminLTE. Use `with-sidebar-horizontal` to set the sidebar horizontal.
+Use `with-sidebar-horizontal` to set the sidebar horizontal.
 
 ![](https://raw.githubusercontent.com/BndyNet/web-framework/master/screenshots/home-sidebar-horizontal.png)
+
+Use `with-header-light` to set the sidebar horizontal.
+
+![](https://raw.githubusercontent.com/BndyNet/web-framework/master/screenshots/home-header-light.png)
 
 ### Languages:
  - HTML, SCSS, CoffeeScript
