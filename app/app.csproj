@@ -205,11 +205,11 @@
     <Content Include="Areas\Admin\Content\css\AdminLTE.mine.min.css">
       <DependentUpon>AdminLTE.mine.css</DependentUpon>
     </Content>
-    <Content Include="Areas\Admin\Content\css\my-skins\my-skin-red-line.css">
-      <DependentUpon>my-skin-red-line.scss</DependentUpon>
+    <Content Include="Areas\Admin\Content\css\my-skins\with-header-light.css">
+      <DependentUpon>with-header-light.scss</DependentUpon>
     </Content>
-    <Content Include="Areas\Admin\Content\css\my-skins\my-skin-red-line.min.css">
-      <DependentUpon>my-skin-red-line.css</DependentUpon>
+    <Content Include="Areas\Admin\Content\css\my-skins\with-header-light.min.css">
+      <DependentUpon>with-header-light.css</DependentUpon>
     </Content>
     <Content Include="Areas\Admin\Content\css\my-skins\with-sidebar-horizontal.css">
       <DependentUpon>with-sidebar-horizontal.scss</DependentUpon>
@@ -2039,7 +2039,7 @@
     <Content Include="Areas\Admin\Views\Shared\Error.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Common.cshtml" />
     <Content Include="Areas\Admin\Views\Account\Register.cshtml" />
-    <Content Include="Areas\Admin\Content\css\my-skins\my-skin-red-line.scss" />
+    <Content Include="Areas\Admin\Content\css\my-skins\with-header-light.scss" />
     <Content Include="Areas\Admin\Content\css\my-skins\_all-my-skins.scss" />
     <Content Include="Areas\Admin\Views\Example\Form.cshtml" />
     <Content Include="Areas\Admin\Content\css\style.scss" />
