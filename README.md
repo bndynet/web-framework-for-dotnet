@@ -1,6 +1,6 @@
 # [web-framework](https://github.com/bndynet/angular-more)
 
-A web framework with Admin template for building great Web sites and Web applications using HTML, CSS and JavaScript. The *Admin Template* based on AdminLTE. 
+A web framework with Admin template for building great Web sites and Web applications fast and easily. The *Admin Template* based on AdminLTE. 
 
 ![](https://raw.githubusercontent.com/BndyNet/web-framework/master/screenshots/home.png)
 
