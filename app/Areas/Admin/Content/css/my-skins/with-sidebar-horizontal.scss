@@ -1,4 +1,5 @@
-﻿.with-sidebar-horizontal {
+﻿.with-sidebar-horizontal,
+.with-sidebar-horizontal.fixed {
     .main-header {
         & > .logo {
             border-right: none;
@@ -16,7 +17,7 @@
         min-height: 44px;
         height: 44px;
 
-        & > .sidebar {
+        .sidebar {
             & > .user-panel {
                 display: none;
             }
@@ -119,11 +120,23 @@
     }
 }
 
+.with-sidebar-horizontal.fixed {
+    .main-sidebar {
+        position: fixed;
+        margin-top: 50px;
+    }
+
+    .content-wrapper {
+        padding-top: 94px;
+    }
+}
+
 @mixin setSkinForSidebarHorizontal($skinName, $skinColor) {
     $hoverColor: darken($skinColor, 5%);
     $hoverColorDarken: darken($hoverColor, 5%);
 
-    .with-sidebar-horizontal {
+    .with-sidebar-horizontal,
+    .with-sidebar-horizontal.fixed {
         &.#{$skinName} {
             .logo {
                 background-color: $skinColor;
@@ -131,8 +144,6 @@
         }
 
         &.#{$skinName}-light {
-
-
             .logo,
             .logo:hover {
                 background-color: #fff;
@@ -163,6 +174,8 @@
                 }
 
                 .sidebar-menu {
+                    background-color: $skinColor;
+
                     & > li {
 
                         &.header {
