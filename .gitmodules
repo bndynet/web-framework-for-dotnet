@@ -1,0 +1,9 @@
+[submodule "app/plugins/bootstrap-more"]
+	path = app/plugins/bootstrap-more
+	url = https://github.com/BndyNet/bootstrap-more.git
+[submodule "app/plugins/angular-more"]
+	path = app/plugins/angular-more
+	url = https://github.com/BndyNet/angular-more.git
+[submodule "app/plugins/jDialog"]
+	path = app/plugins/jDialog
+	url = https://github.com/BndyNet/jDialog.git
