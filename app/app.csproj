@@ -46,11 +46,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.7.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.7\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Net.Bndy, Version=1.0.14298.57, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Net.Bndy.dll</HintPath>
+    </Reference>
+    <Reference Include="Net.Bndy.Data, Version=1.0.14298.35, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Net.Bndy.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Net.Bndy.Web, Version=1.0.14302.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Net.Bndy.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -2095,18 +2111,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\lib\Net.Bndy.Data\Net.Bndy.Data.csproj">
-      <Project>{3a11cb93-33f8-4bef-87f7-67cbe5a211e0}</Project>
-      <Name>Net.Bndy.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\lib\Net.Bndy.Web\Net.Bndy.Web.csproj">
-      <Project>{37d76b33-ad99-471a-a377-a2c0f4c7515d}</Project>
-      <Name>Net.Bndy.Web</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\lib\Net.Bndy\Net.Bndy.csproj">
-      <Project>{c7b30aab-8a3c-4b5c-86e2-28fd15254c24}</Project>
-      <Name>Net.Bndy</Name>
-    </ProjectReference>
     <ProjectReference Include="..\models\models.csproj">
       <Project>{5b5b036b-93d6-4f43-9212-2a50ff3c602b}</Project>
       <Name>models</Name>
