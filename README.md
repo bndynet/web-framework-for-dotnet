@@ -49,6 +49,9 @@ web-framework/
 
 1. Clone the repo
     `git clone https://github.com/bndynet/web-framework.git`
+2. Update submodule
+    `git submodule update --init --recursive`
+
 
 
 ## Copyright and license
