@@ -8,6 +8,17 @@
             <span class="sr-only">Toggle navigation</span>
         </a>
 
+        <div class="navbar-toolbox">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="tool in tools">
+                    <a href="#" ng-click="tool.onclick()">
+                        <i ng-class="tool.icon"></i>
+                        <span ng-bind="tool.text"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <li class="dropdown notifications-menu">

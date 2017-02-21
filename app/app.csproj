@@ -239,6 +239,12 @@
     <Content Include="Areas\Admin\Content\css\my-skins\_all-my-skins.min.css">
       <DependentUpon>_all-my-skins.css</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Content\css\page-home-index.css">
+      <DependentUpon>page-home-index.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\page-home-index.min.css">
+      <DependentUpon>page-home-index.css</DependentUpon>
+    </Content>
     <Content Include="Areas\Admin\Content\css\page-login.css">
       <DependentUpon>page-login.scss</DependentUpon>
     </Content>
@@ -2063,6 +2069,8 @@
     <Content Include="Areas\Admin\Views\Example\Table.cshtml" />
     <Content Include="Areas\Admin\Content\js\pages\example\table.coffee" />
     <Content Include="Areas\Admin\Content\css\my-skins\with-sidebar-horizontal.scss" />
+    <Content Include="Areas\Admin\Views\Home\Dashboard.cshtml" />
+    <Content Include="Areas\Admin\Content\css\page-home-index.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

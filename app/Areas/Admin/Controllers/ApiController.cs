@@ -20,7 +20,7 @@ namespace Net.Bndy.WebApp.Areas.Admin.Controllers
             {
                 Icon = "fa fa-dashboard fa-fw",
                 Text = "Dashboard",
-                Url = "/admin/home/index",
+                Url = "/admin/home/dashboard",
             });
             var exampleMenu = new AppMenuViewModel
             {

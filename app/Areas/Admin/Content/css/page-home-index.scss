@@ -1,0 +1,45 @@
+﻿.page-index {
+    .nav-tabs {
+        background-color: #fff;
+        border-bottom-color: #ecf0f5;
+        height: 44px;
+
+        & > li {
+            & > a {
+                padding-right: 50px;
+                height: 44px;
+                border: none;
+                border-radius: 0;
+
+                &.first {
+                    padding-right: 15px;
+                }
+            }
+
+            &.active {
+                a,
+                a:hover,
+                a:focus {
+                    background-color: #ecf0f5;
+                    border: none;
+                }
+            }
+
+            .close {
+                position: absolute;
+                right: 10px;
+                top: 8px;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                line-height: normal;
+
+                &:hover {
+                }
+            }
+        }
+    }
+
+    .tab-content {
+    }
+}

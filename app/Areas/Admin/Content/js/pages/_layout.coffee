@@ -22,17 +22,44 @@
             $http.get $scope.appSettings.appMenu.url
                 .success (data) ->
                     $scope.appMenus = data
+                    $scope.menuClick($scope.appMenus[0], null) if $scope.appMenus.length > 0
         # TODO
         $scope.onNotificationClick = (item) ->
             $scope.appNotifications.splice $scope.appNotifications.indexOf(item), 1
             dialog.alert item.content, null, {title: item.title}
             
+        # click menu
+        $scope.activedMenus = []
         $scope.menuClick = (menu, $event) ->
-            sender = $($event.target)
-            location.href = menu.url if menu.url
-            $event.stopPropagation() if sender.parents(".with-sidebar-horizontal").length
+            if menu.url and menu.url.indexOf("#") < 0
+                m.actived = false for m in $scope.activedMenus
+                menu.actived = true
+                if $scope.activedMenus.indexOf(menu) < 0
+                    $scope.activedMenus.push menu
+            $event.stopPropagation() if $event and $($event.target).parents(".with-sidebar-horizontal").length
             
-        #TODO: Logout
+        # destroy menu
+        $scope.destoryMenu = (menu) ->
+            $scope.activedMenus.splice $scope.activedMenus.indexOf(menu), 1
+            $scope.activedMenus[0].actived = true if menu.actived
+            
+        # set tools
+        $scope.tools = [
+            {
+                text: "Call Me"
+                icon: "fa fa-phone fa-fw"
+                onclick: ->
+                    dialog.alert "You clicked `#{this.text}` tool."
+            }
+            {
+                text: "Task"
+                icon: "fa fa-calendar fa-fw"
+                onclick: ->
+                    dialog.alert "You clicked `#{this.text}` tool."
+            }
+        ]
+            
+        # log out
         $scope.logout = ->
             dialog.confirm "Are you sure you want to log out?", ->
                 dialog.success "Logged out"

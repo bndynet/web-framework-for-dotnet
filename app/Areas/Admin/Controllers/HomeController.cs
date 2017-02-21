@@ -12,5 +12,10 @@ namespace Net.Bndy.WebApp.Areas.Admin.Controllers
         {
             return View();
         }
+
+        public ActionResult Dashboard()
+        {
+            return View();
+        }
     }
 }

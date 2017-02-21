@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="ngApp" ng-controller="LayoutCtrl">
+<html ng-app="ngApp" @Html.Raw(ViewBag.IsLayout == true ? "ng-controller='LayoutCtrl'" : "")>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
