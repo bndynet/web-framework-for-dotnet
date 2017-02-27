@@ -16,6 +16,7 @@
             $interval ->
                 getNotification()
             , $scope.appSettings.appNotification.interval * 60 * 1000
+            
         # set menus
         $scope.appMenus = []
         if $scope.appSettings.appMenu.url
@@ -37,6 +38,12 @@
                 if $scope.activedMenus.indexOf(menu) < 0
                     $scope.activedMenus.push menu
             $event.stopPropagation() if $event and $($event.target).parents(".with-sidebar-horizontal").length
+            
+        # search on sidebar
+        $scope.search = ->
+            $scope.menuClick({ text: "Search", url: "/admin/home/search?q=#{$scope.searchKeywords}" }, null) if $scope.searchKeywords
+                
+        
             
         # destroy menu
         $scope.destoryMenu = (menu) ->

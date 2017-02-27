@@ -54,6 +54,14 @@
           return $event.stopPropagation();
         }
       };
+      $scope.search = function() {
+        if ($scope.searchKeywords) {
+          return $scope.menuClick({
+            text: "Search",
+            url: "/admin/home/search?q=" + $scope.searchKeywords
+          }, null);
+        }
+      };
       $scope.destoryMenu = function(menu) {
         $scope.activedMenus.splice($scope.activedMenus.indexOf(menu), 1);
         if (menu.actived) {

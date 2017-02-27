@@ -2071,6 +2071,7 @@
     <Content Include="Areas\Admin\Content\css\my-skins\with-sidebar-horizontal.scss" />
     <Content Include="Areas\Admin\Views\Home\Dashboard.cshtml" />
     <Content Include="Areas\Admin\Content\css\page-home-index.scss" />
+    <Content Include="Areas\Admin\Views\Home\Search.cshtml" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

@@ -17,5 +17,12 @@ namespace Net.Bndy.WebApp.Areas.Admin.Controllers
         {
             return View();
         }
+
+        public ActionResult Search(string q)
+        {
+            ViewBag.Keywords = q;
+            // TODO: implement this method
+            return View();
+        }
     }
 }
