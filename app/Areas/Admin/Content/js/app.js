@@ -33,7 +33,7 @@ $.AdminLTE = {};
  * Modify these options to suit your implementation
  */
 $.AdminLTE.options = {
-  //Add slimscroll to navbar menus
+    //Add slimscroll to navbar menus
   //This requires you to load the slimscroll plugin
   //in every page before app.js
   navbarMenuSlimscroll: true,
@@ -285,7 +285,10 @@ function _init() {
       } else if (typeof $.fn.slimScroll == 'undefined' && window.console) {
         window.console.error("Error: the fixed layout requires the slimscroll plugin!");
       }
-      //Enable slimscroll for fixed layout
+        //Enable slimscroll for fixed layout
+      if ($("body").hasClass("with-sidebar-horizontal")) {
+          return;
+      }
       if ($.AdminLTE.options.sidebarSlimScroll) {
         if (typeof $.fn.slimScroll != 'undefined') {
           //Destroy if it exists

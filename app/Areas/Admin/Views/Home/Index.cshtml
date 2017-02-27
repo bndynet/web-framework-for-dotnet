@@ -23,7 +23,16 @@
 @section scripts {
     <script>
         $(function () {
-            $(".tab-content").height($(window).height() - 150);
+            if ($("body").hasClass("with-sidebar-horizontal")) {
+                $(".tab-content").height($(window).height() - $(".main-header").outerHeight()
+                    - $(".main-sidebar").outerHeight() - $(".main-footer").outerHeight()
+                    - $(".page-index > .nav-tabs").outerHeight());
+            }
+            else {
+                $(".tab-content").height($(window).height() - $(".main-header").outerHeight()
+                    - $(".main-footer").outerHeight()
+                    - $(".page-index > .nav-tabs").outerHeight());
+            }
         });
     </script>
 }
