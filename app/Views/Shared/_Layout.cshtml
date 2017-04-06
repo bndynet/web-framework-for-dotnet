@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/1")
+    @Styles.Render("~/bundles/1/2")
+    @Styles.Render("~/bundles/1/2/3")
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("styles", required: false)
 </head>
@@ -26,16 +28,20 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Web Framework</p>
-        </footer>
+
+    <div class="body">
+        <div class="container">
+            @RenderBody()
+        </div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <footer>
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year - Web Framework</p>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/js")
     @RenderSection("scripts", required: false)
 </body>
 </html>

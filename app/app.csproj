@@ -209,6 +209,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AppMenuViewModel.cs" />
+    <Compile Include="Models\HomeIndexViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -354,17 +355,20 @@
     <Content Include="Areas\Admin\Content\js\pages\_layout.min.js">
       <DependentUpon>_layout.js</DependentUpon>
     </Content>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\page-error.css">
       <DependentUpon>page-error.scss</DependentUpon>
     </Content>
     <Content Include="Content\page-error.min.css">
       <DependentUpon>page-error.css</DependentUpon>
     </Content>
+    <Content Include="Content\style.css">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\warning.png" />
     <Content Include="plugins\angular-bootstrap-datetimepicker\css\datetimepicker.css" />
@@ -2086,6 +2090,7 @@
     <Content Include="plugins\bootstrap-more\src\bootstrap-more.scss" />
     <Content Include="plugins\bootstrap-more\src\_variables.scss" />
     <Content Include="plugins\angular-bootstrap-datetimepicker\css\datetimepicker.css.map" />
+    <Content Include="Content\style.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

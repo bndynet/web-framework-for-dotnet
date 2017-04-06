@@ -62,5 +62,9 @@
   {
     "outputFile": "Areas/Admin/Content/css/page-home-index.css",
     "inputFile": "Areas/Admin/Content/css/page-home-index.scss"
+  },
+  {
+    "outputFile": "Content/style.css",
+    "inputFile": "Content/style.scss"
   }
 ]
