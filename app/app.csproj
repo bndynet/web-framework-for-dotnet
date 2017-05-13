@@ -2092,6 +2092,7 @@
     <Content Include="plugins\angular-bootstrap-datetimepicker\css\datetimepicker.css.map" />
     <Content Include="Content\style.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\html5shiv.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

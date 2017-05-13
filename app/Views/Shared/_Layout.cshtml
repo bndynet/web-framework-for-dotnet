@@ -9,6 +9,10 @@
     @Styles.Render("~/bundles/1/2/3")
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("styles", required: false)
+    <!--[if lt IE 9]>
+      @Scripts.Render("~/bundles/ie8")
+    <![endif]-->
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">

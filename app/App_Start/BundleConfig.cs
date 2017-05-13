@@ -17,6 +17,10 @@ namespace Net.Bndy.WebApp
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/ie8").Include(
+                        "~/Scripts/html5shiv.min.js",
+                        "~/Scripts/respond.js"));
+
 
             bundles.Add(new StyleBundle("~/bundles/1").Include(
                 "~/Content/style.css"));
