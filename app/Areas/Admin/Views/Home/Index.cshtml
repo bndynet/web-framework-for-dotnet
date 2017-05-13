@@ -10,7 +10,7 @@
         </li>
     </ul>
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane" ng-class="{active:  menu.actived}" id="{{menu.id}}" ng-repeat="menu in activedMenus track by $index" bn-fill-height>
+        <div role="tabpanel" class="tab-pane" ng-class="{active:  menu.actived}" id="{{menu.id}}" ng-repeat="menu in activedMenus track by menu.url" bn-fill-height>
             <iframe id="mainFrame" style="width:100%;height:100%;" ng-src="{{menu.url}}" frameborder="0"></iframe>
         </div>
     </div>
