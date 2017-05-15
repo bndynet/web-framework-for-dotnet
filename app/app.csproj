@@ -375,6 +375,8 @@
     <Content Include="plugins\angular-bootstrap-datetimepicker\js\datetimepicker.js" />
     <Content Include="plugins\angular-bootstrap-datetimepicker\js\datetimepicker.templates.js" />
     <Content Include="plugins\angular-date-time-input\dateTimeInput.js" />
+    <Content Include="plugins\angular-material\angular-material.css" />
+    <Content Include="plugins\angular-material\angular-material.js" />
     <Content Include="plugins\angular-more\dist\angular-more.min.css" />
     <Content Include="plugins\angular-more\dist\angular-more.min.js" />
     <Content Include="plugins\angular\angular-animate.js" />
