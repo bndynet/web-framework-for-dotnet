@@ -2078,6 +2078,8 @@
     <Content Include="Areas\Admin\Views\Home\Dashboard.cshtml" />
     <Content Include="Areas\Admin\Content\css\page-home-index.scss" />
     <Content Include="Areas\Admin\Views\Home\Search.cshtml" />
+    <Content Include="Areas\Admin\Views\Example\AngularMaterial.cshtml" />
+    <Content Include="Areas\Admin\Content\js\pages\example\angularMaterial.coffee" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

@@ -37,5 +37,10 @@ namespace Net.Bndy.WebApp.Areas.Admin.Controllers
 
             return JsonNet(result);
         }
+
+        public ActionResult AngularMaterial()
+        {
+            return View();
+        }
     }
 }

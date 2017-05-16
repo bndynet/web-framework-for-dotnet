@@ -1,22 +1,23 @@
 ﻿<!DOCTYPE html>
 <html ng-app="ngApp" @Html.Raw(ViewBag.IsLayout == true ? "ng-controller='LayoutCtrl'" : "")>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title ng-bind="appSettings.appName"></title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
     <link href="~/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="~/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="~/plugins/ionicons/css/ionicons.css" rel="stylesheet" />
     <link href="~/Areas/Admin/Content/css/AdminLTE.css" rel="stylesheet" />
     <link href="~/Areas/Admin/Content/css/skins/_all-skins.css" rel="stylesheet" />
     <link href="~/Areas/Admin/Content/css/my-skins/_all-my-skins.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/plugins/iCheck/flat/blue.css">
-    <link rel="stylesheet" href="~/plugins/morris/morris.css">
-    <link rel="stylesheet" href="~/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
-    <link rel="stylesheet" href="~/plugins/datepicker/datepicker3.css">
-    <link rel="stylesheet" href="~/plugins/daterangepicker/daterangepicker.css">
-    <link rel="stylesheet" href="~/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="~/plugins/iCheck/flat/blue.css" />
+    <link rel="stylesheet" href="~/plugins/morris/morris.css" />
+    <link rel="stylesheet" href="~/plugins/jvectormap/jquery-jvectormap-1.2.2.css" />
+    <link rel="stylesheet" href="~/plugins/datepicker/datepicker3.css" />
+    <link rel="stylesheet" href="~/plugins/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="~/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" />
+    <link rel="stylesheet" href="~/plugins/angular-material/angular-material.css" />
 
     <!--jDialog-->
     <link href="~/plugins/jDialog/lib/layer/skin/layer.css" rel="stylesheet" />
@@ -84,6 +85,12 @@
 
     <script src="~/plugins/angular/angular.js"></script>
     <script src="~/plugins/angular/angular-sanitize.js"></script>
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="~/plugins/angular/angular-animate.js"></script>
+    <script src="~/plugins/angular/angular-aria.js"></script>
+    <script src="~/plugins/angular/angular-messages.js"></script>
+    <script src="~/plugins/angular-material/angular-material.js"></script>
+
     <script src="~/plugins/angular-date-time-input/dateTimeInput.js"></script>
     <script src="~/plugins/angular-bootstrap-datetimepicker/js/datetimepicker.js"></script>
     <script src="~/plugins/angular-bootstrap-datetimepicker/js/datetimepicker.templates.js"></script>
