@@ -1,6 +1,6 @@
-﻿<div class="md-padding">
+﻿<div class="md-padding" layout="column">
     <div ng-controller="AutocompleteCtrl as ctrl" layout="column" ng-cloak>
-        <md-toolbar md-scroll-shrink ng-if="true">
+        <md-toolbar>
             <div class="md-toolbar-tools">
                 <h3>
                     <a href="https://material.angularjs.org/latest/demo/autocomplete" target="_blank">Autocomplete</a>
@@ -39,7 +39,7 @@
     </div>
 
     <div ng-controller="ButtonCtrl" ng-cloak>
-        <md-toolbar md-scroll-shrink ng-if="true">
+        <md-toolbar>
             <div class="md-toolbar-tools">
                 <h3>
                     <a href="https://material.angularjs.org/latest/demo/button" target="_blank">Button</a>
@@ -129,9 +129,8 @@
         </md-content>
     </div>
 
-
     <div ng-controller="CheckBoxCtrl">
-        <md-toolbar md-scroll-shrink ng-if="true">
+        <md-toolbar>
             <div class="md-toolbar-tools">
                 <h3>
                     <a href="https://material.angularjs.org/latest/demo/checkbox" target="_blank">Checkbox</a>
@@ -170,6 +169,7 @@
             </div>
         </md-content>
     </div>
+</div>
 
     @section scripts{
         <script>

@@ -2,7 +2,7 @@
 (function() {
   var app;
 
-  app = angular.module("ngApp", ["ngSanitize", "ngMaterial", "bn.filters", "bn.common", "bn.ui.input", "bn.ui.select", "bn.ui.checks", "bn.ui.pager"]);
+  app = angular.module("ngApp", ["ngSanitize", "ngMaterial", "bn.ui"]);
 
   window.app = app;
 
