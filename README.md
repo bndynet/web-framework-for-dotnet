@@ -26,9 +26,10 @@ The following is `with-header-light` style.
  - log4net
  - [Net.Bndy, Net.Bndy.Data, Net.Bndy.Web](https://github.com/BndyNet/lib)
  - ================
- - bootstrap
+ - Bootstrap
  - [bootstrap-more](https://github.com/bndynet/bootstrap-more)
- - angularjs
+ - AngularJS
+ - AngularJS Material
  - [angular-more](https://github.com/bndynet/angular-more)
 
 ### Front-end Plugins
