@@ -2080,6 +2080,7 @@
     <Content Include="Areas\Admin\Views\Home\Search.cshtml" />
     <Content Include="Areas\Admin\Views\Example\AngularMaterial.cshtml" />
     <Content Include="Areas\Admin\Content\js\pages\example\angularMaterial.coffee" />
+    <Content Include="Areas\Admin\Content\css\_variables.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
