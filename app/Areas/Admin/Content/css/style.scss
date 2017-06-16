@@ -1,19 +1,4 @@
-﻿$gray-base: #000 !default;
-$gray-darker: lighten($gray-base, 13.5%) !default; // #222
-$gray-dark: lighten($gray-base, 20%) !default; // #333
-$gray: lighten($gray-base, 33.5%) !default; // #555
-$gray-light: lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
-
-$screen-xs: 480px !default;
-$screen-sm: 768px !default;
-$screen-md: 992px !default;
-$screen-lg: 1200px !default;
-
-$color-error: #ff6a00 !default;
-$color-success: #00a65a !default;
-$color-success-border: darken($color-success, 10%);
-
+﻿@import "_variables.scss";
 
 html, body {
     font-family: 'Segoe UI', 'Microsoft YaHei', Tahoma, Geneva, Verdana, sans-serif;
@@ -330,4 +315,54 @@ form {
             text-align: center;
         }
     }
+}
+
+/* bootstrap */
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: $primary-color;
+}
+
+
+
+
+/* layui */
+.layui-layer {
+    &.layui-layer-dialog {
+        margin-top: -100px;
+
+        .layui-layer-btn {
+            padding-bottom: 20px;
+
+            a {
+                height: 30px;
+            }
+
+            .layui-layer-btn0 {
+                border-color: $primary-color;
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+
+/* material */
+.md-button.md-primary {
+    &.md-fab,
+    &.md-raised {
+        background-color: $primary-color;
+
+        &:not([disabled]):hover {
+            background-color: $primary-color;
+        }
+
+        &[disabled] {
+            background-color: rgba(0,0,0,0.12);
+        }
+    }
+}
+
+md-checkbox.md-default-theme.md-checked .md-icon, md-checkbox.md-checked .md-icon,
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+    background-color: $primary-color;
 }

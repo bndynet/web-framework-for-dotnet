@@ -186,3 +186,30 @@ form.readonly {
       float: none;
       text-align: center; } }
 
+/* bootstrap */
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #3c8dbc; }
+
+/* layui */
+.layui-layer.layui-layer-dialog {
+  margin-top: -100px; }
+  .layui-layer.layui-layer-dialog .layui-layer-btn {
+    padding-bottom: 20px; }
+    .layui-layer.layui-layer-dialog .layui-layer-btn a {
+      height: 30px; }
+    .layui-layer.layui-layer-dialog .layui-layer-btn .layui-layer-btn0 {
+      border-color: #3c8dbc;
+      background-color: #3c8dbc; }
+
+/* material */
+.md-button.md-primary.md-fab, .md-button.md-primary.md-raised {
+  background-color: #3c8dbc; }
+  .md-button.md-primary.md-fab:not([disabled]):hover, .md-button.md-primary.md-raised:not([disabled]):hover {
+    background-color: #3c8dbc; }
+  .md-button.md-primary.md-fab[disabled], .md-button.md-primary.md-raised[disabled] {
+    background-color: rgba(0, 0, 0, 0.12); }
+
+md-checkbox.md-default-theme.md-checked .md-icon, md-checkbox.md-checked .md-icon,
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+  background-color: #3c8dbc; }
+

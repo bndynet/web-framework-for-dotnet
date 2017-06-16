@@ -1,4 +1,6 @@
-﻿.page-index {
+﻿@import "_variables.scss";
+
+.page-index {
     .nav-tabs {
         background-color: #fff;
         border-bottom-color: #ecf0f5;
@@ -10,6 +12,7 @@
                 height: 44px;
                 border: none;
                 border-radius: 0;
+                color: $gray-light;
 
                 &.first {
                     padding-right: 15px;
@@ -22,6 +25,7 @@
                 a:focus {
                     background-color: #ecf0f5;
                     border: none;
+                    color: $primary-color;
                 }
             }
 

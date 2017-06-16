@@ -6,14 +6,16 @@
     padding-right: 50px;
     height: 44px;
     border: none;
-    border-radius: 0; }
+    border-radius: 0;
+    color: #777777; }
     .page-index .nav-tabs > li > a.first {
       padding-right: 15px; }
   .page-index .nav-tabs > li.active a,
   .page-index .nav-tabs > li.active a:hover,
   .page-index .nav-tabs > li.active a:focus {
     background-color: #ecf0f5;
-    border: none; }
+    border: none;
+    color: #3c8dbc; }
   .page-index .nav-tabs > li .close {
     position: absolute;
     right: 10px;
