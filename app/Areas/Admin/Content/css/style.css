@@ -24,6 +24,11 @@ a {
 .margin-sm {
   margin: 5px; }
 
+input[type="file"].covered {
+  position: absolute;
+  top: -100%;
+  left: -100%; }
+
 /* datepicker, daterangepicker */
 .daterangepicker.dropdown-menu .daterangepicker_input input.active {
   background-color: #eeeeee; }
@@ -189,6 +194,10 @@ form.readonly {
 /* bootstrap */
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
   background-color: #3c8dbc; }
+
+.table tr td .progress {
+  height: 1em;
+  margin-top: 3px; }
 
 /* layui */
 .layui-layer.layui-layer-dialog {

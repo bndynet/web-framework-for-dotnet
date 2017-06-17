@@ -16,22 +16,22 @@ namespace Net.Bndy.WebApp.Areas.Admin.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            //if (Auth.GetUsers().Count() > 0)
-            //{
-            //    return RedirectToAction("login");
-            //}
+            if (Auth.GetUsers().Count() > 0)
+            {
+                return RedirectToAction("login");
+            }
             return View();
         }
         [HttpPost]
         [AllowAnonymous]
         public ActionResult Register(string username, string password)
         {
-            //if (Auth.GetUsers().Count() > 0)
-            //{
-            //    return RedirectToAction("login");
-            //}
+            if (Auth.GetUsers().Count() > 0)
+            {
+                return RedirectToAction("login");
+            }
 
-            Auth.CreateUser(new ApplicationUser
+            Auth.CreateUser(new AppUser
             {
                 UserName = username,
             }, password);

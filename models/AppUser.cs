@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Net.Bndy.WebApp.Models
 {
-    public class ApplicationRole : IdentityRole
+    public class AppUser : IdentityUser
     {
+        public string FullName { get; set; }
     }
 }

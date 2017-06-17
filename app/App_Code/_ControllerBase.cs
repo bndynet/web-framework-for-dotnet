@@ -10,13 +10,21 @@ namespace Net.Bndy.WebApp
     using Net.Bndy.Web;
     public abstract class _ControllerBase : Net.Bndy.Web.MVC.ControllerBase
     {
-        protected AspNetAuthentication<ApplicationUser, ApplicationRole> Auth
+        protected AspNetAuthentication<AppUser, AppRole> Auth
         {
             get
             {
-                return new AspNetAuthentication<ApplicationUser, ApplicationRole>(this.HttpContext, 
-                    new ApplicationDbContext()
+                return new AspNetAuthentication<AppUser, AppRole>(this.HttpContext, 
+                    new AppDbContext()
                     );
+            }
+        }
+
+        protected AppDbContext Db
+        {
+            get
+            {
+                return new AppDbContext();
             }
         }
 

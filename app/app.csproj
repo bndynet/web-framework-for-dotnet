@@ -199,6 +199,7 @@
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Areas\Admin\Controllers\ApiController.cs" />
     <Compile Include="Areas\Admin\Controllers\ExampleController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FileController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\_ControllerBase.cs" />
     <Compile Include="Areas\Admin\Models\AppMenuViewModel.cs" />
@@ -369,12 +370,17 @@
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="images\banner_1.jpg" />
+    <Content Include="images\banner_2.jpg" />
+    <Content Include="images\banner_3.jpg" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\warning.png" />
     <Content Include="plugins\angular-bootstrap-datetimepicker\css\datetimepicker.css" />
     <Content Include="plugins\angular-bootstrap-datetimepicker\js\datetimepicker.js" />
     <Content Include="plugins\angular-bootstrap-datetimepicker\js\datetimepicker.templates.js" />
     <Content Include="plugins\angular-date-time-input\dateTimeInput.js" />
+    <Content Include="plugins\angular-file-upload\dist\angular-file-upload.js" />
+    <Content Include="plugins\angular-file-upload\dist\angular-file-upload.min.js" />
     <Content Include="plugins\angular-material\angular-material.css" />
     <Content Include="plugins\angular-material\angular-material.js" />
     <Content Include="plugins\angular-more\dist\angular-more.min.css" />
@@ -2096,6 +2102,8 @@
     <Content Include="plugins\bootstrap-more\src\_variables.scss" />
     <Content Include="plugins\angular-bootstrap-datetimepicker\css\datetimepicker.css.map" />
     <Content Include="Content\style.scss" />
+    <Content Include="plugins\angular-file-upload\dist\angular-file-upload.js.map" />
+    <Content Include="plugins\angular-file-upload\dist\angular-file-upload.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\html5shiv.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -2125,6 +2133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Views\File\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

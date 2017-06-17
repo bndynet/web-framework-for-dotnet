@@ -57,9 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="ApplicationRole.cs" />
-    <Compile Include="ApplicationUser.cs" />
+    <Compile Include="AppDbContext.cs" />
+    <Compile Include="AppFile.cs" />
+    <Compile Include="AppRole.cs" />
+    <Compile Include="AppUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
