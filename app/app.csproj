@@ -1924,6 +1924,7 @@
     <Content Include="plugins\jvectormap\jquery-jvectormap-usa-en.js" />
     <Content Include="plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
     <Content Include="plugins\knob\jquery.knob.js" />
+    <Content Include="plugins\lodash\lodash.js" />
     <Content Include="plugins\moment\moment-with-locales.js" />
     <Content Include="plugins\moment\moment.js" />
     <Content Include="plugins\morris\morris.css" />
